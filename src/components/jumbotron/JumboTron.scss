@@ -1,0 +1,15 @@
+.btl-jumbotron-description-container {
+  margin-top: -20em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .btl-jumbotron-description {
+    font-size: 2em;
+    line-height: 1.7;
+    color: white;
+    font-weight: 600;
+    width: 35em;
+  }
+}
