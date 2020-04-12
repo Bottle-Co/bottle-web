@@ -11,17 +11,17 @@ class JumboTron extends Component {
       <Section
         background={<Video source={backgroundVideo} />}
         backgroundStyles={{
-          background: 'rgba(0, 0, 0, 0.5)'
+          height: '100%'
         }}
         contentStyles={{
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '80em',
+          height: '100%',
           backgroundColor: 'rgba(0,0,0,0.35)'
         }}
         sectionStyles={{
-            height: '80vh'
+            height: '100vh'
         }}
       >
         <div className="btl-jumbotron-description-container">
