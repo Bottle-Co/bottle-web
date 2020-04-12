@@ -13,7 +13,7 @@ const Diamond = (props) => {
 
   return (
     <div
-      class="btl-diamond rellax"
+      className="btl-diamond rellax"
       data-rellax-speed={props.rellaxSpeed}
       style={diamondStyles}
     >
@@ -26,7 +26,7 @@ Diamond.propTypes = {
   height: PropTypes.string,
   background: PropTypes.string,
   rellaxSpeed: PropTypes.number,
-  margin: PropTypes.number,
+  margin: PropTypes.string,
 }
 
 export default Diamond;
