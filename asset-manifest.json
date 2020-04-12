@@ -1,24 +1,27 @@
 {
   "files": {
-    "main.css": "/bottle-web/static/css/main.4f8ebef0.chunk.css",
-    "main.js": "/bottle-web/static/js/main.f7a8a55b.chunk.js",
-    "main.js.map": "/bottle-web/static/js/main.f7a8a55b.chunk.js.map",
+    "main.css": "/bottle-web/static/css/main.cce5cfb3.chunk.css",
+    "main.js": "/bottle-web/static/js/main.b5c89e66.chunk.js",
+    "main.js.map": "/bottle-web/static/js/main.b5c89e66.chunk.js.map",
     "runtime-main.js": "/bottle-web/static/js/runtime-main.6584961b.js",
     "runtime-main.js.map": "/bottle-web/static/js/runtime-main.6584961b.js.map",
-    "static/js/2.79073bc1.chunk.js": "/bottle-web/static/js/2.79073bc1.chunk.js",
-    "static/js/2.79073bc1.chunk.js.map": "/bottle-web/static/js/2.79073bc1.chunk.js.map",
+    "static/js/2.e3b8c6b6.chunk.js": "/bottle-web/static/js/2.e3b8c6b6.chunk.js",
+    "static/js/2.e3b8c6b6.chunk.js.map": "/bottle-web/static/js/2.e3b8c6b6.chunk.js.map",
     "index.html": "/bottle-web/index.html",
-    "precache-manifest.6d5dfe10043c92dbc42c6092fe75adc6.js": "/bottle-web/precache-manifest.6d5dfe10043c92dbc42c6092fe75adc6.js",
+    "precache-manifest.6ef5a31dc7d5bcf6e3a32e88037e4796.js": "/bottle-web/precache-manifest.6ef5a31dc7d5bcf6e3a32e88037e4796.js",
     "service-worker.js": "/bottle-web/service-worker.js",
-    "static/css/main.4f8ebef0.chunk.css.map": "/bottle-web/static/css/main.4f8ebef0.chunk.css.map",
-    "static/js/2.79073bc1.chunk.js.LICENSE.txt": "/bottle-web/static/js/2.79073bc1.chunk.js.LICENSE.txt",
+    "static/css/main.cce5cfb3.chunk.css.map": "/bottle-web/static/css/main.cce5cfb3.chunk.css.map",
+    "static/js/2.e3b8c6b6.chunk.js.LICENSE.txt": "/bottle-web/static/js/2.e3b8c6b6.chunk.js.LICENSE.txt",
     "static/media/Logo.scss": "/bottle-web/static/media/BlackBerryJam.c6b7ba1d.ttf",
+    "static/media/recycle.svg": "/bottle-web/static/media/recycle.1c2976fc.svg",
+    "static/media/saveForests.svg": "/bottle-web/static/media/saveForests.3264438e.svg",
+    "static/media/saveWater.svg": "/bottle-web/static/media/saveWater.1d5f0e47.svg",
     "static/media/video.mp4": "/bottle-web/static/media/video.ffcd876c.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.6584961b.js",
-    "static/js/2.79073bc1.chunk.js",
-    "static/css/main.4f8ebef0.chunk.css",
-    "static/js/main.f7a8a55b.chunk.js"
+    "static/js/2.e3b8c6b6.chunk.js",
+    "static/css/main.cce5cfb3.chunk.css",
+    "static/js/main.b5c89e66.chunk.js"
   ]
 }
