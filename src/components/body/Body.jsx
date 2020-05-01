@@ -6,63 +6,64 @@ import SaveWater from '../../assets/saveWater.svg';
 import SaveForests from '../../assets/saveForests.svg';
 
 import './Body.scss';
+import PerspectiveCard from '../perspectiveCard/PerspectiveCard';
 
 class Body extends Component {
   renderCards() {
     return (
       <div className="ui special cards">
-        <div class="card">
-            <div class="blurring dimmable image">
-              <div class="ui dimmer">
-                <div class="content">
-                  <div class="center">
-                    <div class="ui inverted button">Add Friend</div>
+        <div className="card">
+            <div className="blurring dimmable image">
+              <div className="ui dimmer">
+                <div className="content">
+                  <div className="center">
+                    <div className="ui inverted button">Add Friend</div>
                   </div>
                 </div>
               </div>
               <img className="btl-cardImage" src={Recycle} />
             </div>
-            <div class="content">
-              <a class="header">Recycle, Reuse</a>
-              <div class="description">
+            <div className="content">
+              <a className="header">Recycle, Reuse</a>
+              <div className="description">
                 Quisque porta, lacus a faucibus placerat, erat diam aliquam tellus, in mollis erat nunc ut dolor. Etiam ac felis nibh.
               </div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="blurring dimmable image">
-              <div class="ui dimmer">
-                <div class="content">
-                  <div class="center">
-                    <div class="ui inverted button">Add Friend</div>
+          <div className="card">
+            <div className="blurring dimmable image">
+              <div className="ui dimmer">
+                <div className="content">
+                  <div className="center">
+                    <div className="ui inverted button">Add Friend</div>
                   </div>
                 </div>
               </div>
               <img className="btl-cardImage" src={SaveWater} />
             </div>
-            <div class="content">
-              <a class="header">Save water</a>
-              <div class="description">
+            <div className="content">
+              <a className="header">Save water</a>
+              <div className="description">
                 Quisque porta, lacus a faucibus placerat, erat diam aliquam tellus, in mollis erat nunc ut dolor. Etiam ac felis nibh.
               </div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="blurring dimmable image">
-              <div class="ui dimmer">
-                <div class="content">
-                  <div class="center">
-                    <div class="ui inverted button">Add Friend</div>
+          <div className="card">
+            <div className="blurring dimmable image">
+              <div className="ui dimmer">
+                <div className="content">
+                  <div className="center">
+                    <div className="ui inverted button">Add Friend</div>
                   </div>
                 </div>
               </div>
               <img className="btl-cardImage" src={SaveForests} />
             </div>
-            <div class="content">
-              <a class="header">Save forests</a>
-              <div class="description">
+            <div className="content">
+              <a className="header">Save forests</a>
+              <div className="description">
                 Quisque porta, lacus a faucibus placerat, erat diam aliquam tellus, in mollis erat nunc ut dolor. Etiam ac felis nibh.
               </div>
             </div>
@@ -97,6 +98,7 @@ class Body extends Component {
             <div className="ui container btl-cardContainer">
               {this.renderCards()}
             </div>
+            <PerspectiveCard imageUrl="https://unsplash.it/500/300" deg={6} />
           </div>
       </Section>
     )

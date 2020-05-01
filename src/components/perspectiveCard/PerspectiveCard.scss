@@ -1,0 +1,27 @@
+.card {
+  display: inline-block;
+  background-color: #eee;
+  perspective: 1000px;
+  
+  &__container {
+    position: relative;
+    border-radius: 1rem;
+    overflow: hidden;
+  }
+  
+  &__image {
+  }
+  
+  &__shine {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+  
+  &__title {
+    margin: 0;
+    position: absolute;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: white;
+
+  }
+}
