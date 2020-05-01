@@ -6,12 +6,14 @@ class PerspectiveCard extends Component {
     super(props);
     this.cardRef = React.createRef();
     this.imageRef = React.createRef();
+    this.videoRef = React.createRef();
 
     this.state = {
       rotX: 0,
       rotY: 0,
       shineX: 0.5,
-      shineY: 0.5
+      shineY: 0.5,
+      pause: true
     };
 
     this.initialize();
@@ -40,17 +42,21 @@ class PerspectiveCard extends Component {
     const { top, left, width, height } = this.cardRef.current.getBoundingClientRect();
     const x = (clientX - left) / width;
     const y = (clientY - top) / height;
+    console.log(this.videoRef)
+    this.videoRef.current.play();
 
     this.setState({
       rotX: x * 2 - 1,
       rotY: y * 2 - 1,
       shineX: 100 - (x * 90),
-      shineY: 100 - (y * 90)
+      shineY: 100 - (y * 90),
+      pause: false
     });
   }
 
-  handleMouseLeave= () => {
-    this.setState({ rotX: 0, rotY: 0, shineX: 0.5, shineY: 0.5 });
+  handleMouseLeave= (evt) => {
+    this.videoRef.current.pause();
+    this.setState({ rotX: 0, rotY: 0, shineX: 0.5, shineY: 0.5, pause: true });
   }
 
   render() {
@@ -65,18 +71,22 @@ class PerspectiveCard extends Component {
     return (
       <div
         ref={this.cardRef}
-        className="card">
+        className="btl-Card">
         <div
           style={this.imageStyle}
           ref={this.imageRef}
-          className="card__container">
-          <img
-            className="card__image"
+        >
+          <video
+            ref={this.videoRef}
+            className="btl-CardImage"
             src={this.props.imageUrl}
-          />
-          <div className="card__shine" style={this.shineStyle}/>
+            loop muted playsInline
+          >
+            <source src={this.props.imageUrl} type="video/mp4"></source>
+          </video>
+          <div className="btl-CardShine" style={this.shineStyle}/>
         </div>
-        <h1 className="card__title">{ "Hello" }</h1>
+        {/* <h1 className="btl_CardTitle">{ "Save forests" }</h1> */}
       </div>
     );
   }

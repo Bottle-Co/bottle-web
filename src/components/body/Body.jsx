@@ -4,6 +4,9 @@ import Section from '../section/Section';
 import Recycle from '../../assets/recycle.svg';
 import SaveWater from '../../assets/saveWater.svg';
 import SaveForests from '../../assets/saveForests.svg';
+import forest from '../../assets/forest.mp4';
+import water from '../../assets/water.mp4';
+import environment from '../../assets/environment.mp4';
 
 import './Body.scss';
 import PerspectiveCard from '../perspectiveCard/PerspectiveCard';
@@ -11,63 +14,10 @@ import PerspectiveCard from '../perspectiveCard/PerspectiveCard';
 class Body extends Component {
   renderCards() {
     return (
-      <div className="ui special cards">
-        <div className="card">
-            <div className="blurring dimmable image">
-              <div className="ui dimmer">
-                <div className="content">
-                  <div className="center">
-                    <div className="ui inverted button">Add Friend</div>
-                  </div>
-                </div>
-              </div>
-              <img className="btl-cardImage" src={Recycle} />
-            </div>
-            <div className="content">
-              <a className="header">Recycle, Reuse</a>
-              <div className="description">
-                Quisque porta, lacus a faucibus placerat, erat diam aliquam tellus, in mollis erat nunc ut dolor. Etiam ac felis nibh.
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="blurring dimmable image">
-              <div className="ui dimmer">
-                <div className="content">
-                  <div className="center">
-                    <div className="ui inverted button">Add Friend</div>
-                  </div>
-                </div>
-              </div>
-              <img className="btl-cardImage" src={SaveWater} />
-            </div>
-            <div className="content">
-              <a className="header">Save water</a>
-              <div className="description">
-                Quisque porta, lacus a faucibus placerat, erat diam aliquam tellus, in mollis erat nunc ut dolor. Etiam ac felis nibh.
-              </div>
-            </div>
-          </div>
-
-          <div className="card">
-            <div className="blurring dimmable image">
-              <div className="ui dimmer">
-                <div className="content">
-                  <div className="center">
-                    <div className="ui inverted button">Add Friend</div>
-                  </div>
-                </div>
-              </div>
-              <img className="btl-cardImage" src={SaveForests} />
-            </div>
-            <div className="content">
-              <a className="header">Save forests</a>
-              <div className="description">
-                Quisque porta, lacus a faucibus placerat, erat diam aliquam tellus, in mollis erat nunc ut dolor. Etiam ac felis nibh.
-              </div>
-            </div>
-          </div>
+      <div className="btl-CardContainer">
+        <PerspectiveCard imageUrl={forest} deg={6} />
+        <PerspectiveCard imageUrl={water} deg={6} />
+        <PerspectiveCard imageUrl={environment} deg={6} />
       </div>
     );
   }
@@ -98,7 +48,6 @@ class Body extends Component {
             <div className="ui container btl-cardContainer">
               {this.renderCards()}
             </div>
-            <PerspectiveCard imageUrl="https://unsplash.it/500/300" deg={6} />
           </div>
       </Section>
     )

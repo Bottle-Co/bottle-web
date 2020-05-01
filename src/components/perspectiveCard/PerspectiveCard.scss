@@ -1,27 +1,23 @@
-.card {
-  display: inline-block;
-  background-color: #eee;
+.btl-Card {
   perspective: 1000px;
+
   
-  &__container {
-    position: relative;
-    border-radius: 1rem;
-    overflow: hidden;
-  }
-  
-  &__image {
-  }
-  
-  &__shine {
+  .btl-CardShine {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
   }
   
-  &__title {
+  .btl_CardTitle {
     margin: 0;
     position: absolute;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: white;
 
+  }
+
+  .btl-CardImage {
+    width: 20em;
+    height: 30em;
+    object-fit: cover;
   }
 }
