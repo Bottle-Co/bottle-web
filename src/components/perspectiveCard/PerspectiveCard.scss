@@ -1,0 +1,44 @@
+.btl-Card {
+  perspective: 1000px;
+  border-radius: 1em;
+
+  
+  .btl-CardShine {
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+  }
+
+  .btl-CardContent {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    padding: 1em;
+    left: 0;
+    bottom: 0em;
+    margin: 0;
+    background-image: linear-gradient(to top, black , rgba(0,0,0,0));
+    height: auto;
+    width: 100%;
+
+    .btl-CardTitle {
+      font-size: 2em;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      color: white;
+      transition: all 0.1s ease-in-out
+    }
+
+    .btl-CardDescription {
+      font-size: 1em;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      color: white;
+      animation-name: splat-to-left;
+      animation-duration: 1000ms;
+    }
+  }
+
+  .btl-CardImage {
+    width: 20em;
+    height: 30em;
+    object-fit: cover;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import * as backgroundVideo from '../../assets/video.mp4'
+import * as backgroundVideo from '../../assets/life.mp4'
 import Section from '../section/Section';
 import JumboButton from '../jumboButton/JumboButton';
 import Video from '../video/Video';
@@ -11,7 +11,7 @@ class JumboTron extends Component {
       <Section
         background={<Video source={backgroundVideo} />}
         backgroundStyles={{
-          height: '100%'
+          height: '100%',
         }}
         contentStyles={{
           display: 'flex',
@@ -21,7 +21,7 @@ class JumboTron extends Component {
           backgroundColor: 'rgba(0,0,0,0.35)'
         }}
         sectionStyles={{
-            height: '100vh'
+            height: '100vh',
         }}
       >
         <div className="btl-jumbotron-description-container">

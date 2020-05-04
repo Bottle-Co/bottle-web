@@ -1,9 +1,9 @@
 .btl-jumbotron-description-container {
-  margin-top: -20em;
   display: flex;
+  width: 90%;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   .btl-jumbotron-description {
     font-size: 2em;

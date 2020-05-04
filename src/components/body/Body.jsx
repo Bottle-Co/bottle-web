@@ -1,72 +1,35 @@
 import React, { Component } from 'react';
-import Diamond from '../diamond/Diamond';
+import Divider from '@material-ui/core/Divider';
 import Section from '../section/Section';
 import Recycle from '../../assets/recycle.svg';
 import SaveWater from '../../assets/saveWater.svg';
 import SaveForests from '../../assets/saveForests.svg';
+import forest from '../../assets/forest.mp4';
+import water from '../../assets/water.mp4';
+import environment from '../../assets/environment.mp4';
 
 import './Body.scss';
+import PerspectiveCard from '../perspectiveCard/PerspectiveCard';
 
 class Body extends Component {
   renderCards() {
     return (
-      <div className="ui special cards">
-        <div class="card">
-            <div class="blurring dimmable image">
-              <div class="ui dimmer">
-                <div class="content">
-                  <div class="center">
-                    <div class="ui inverted button">Add Friend</div>
-                  </div>
-                </div>
-              </div>
-              <img className="btl-cardImage" src={Recycle} />
-            </div>
-            <div class="content">
-              <a class="header">Recycle, Reuse</a>
-              <div class="description">
-                Quisque porta, lacus a faucibus placerat, erat diam aliquam tellus, in mollis erat nunc ut dolor. Etiam ac felis nibh.
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="blurring dimmable image">
-              <div class="ui dimmer">
-                <div class="content">
-                  <div class="center">
-                    <div class="ui inverted button">Add Friend</div>
-                  </div>
-                </div>
-              </div>
-              <img className="btl-cardImage" src={SaveWater} />
-            </div>
-            <div class="content">
-              <a class="header">Save water</a>
-              <div class="description">
-                Quisque porta, lacus a faucibus placerat, erat diam aliquam tellus, in mollis erat nunc ut dolor. Etiam ac felis nibh.
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="blurring dimmable image">
-              <div class="ui dimmer">
-                <div class="content">
-                  <div class="center">
-                    <div class="ui inverted button">Add Friend</div>
-                  </div>
-                </div>
-              </div>
-              <img className="btl-cardImage" src={SaveForests} />
-            </div>
-            <div class="content">
-              <a class="header">Save forests</a>
-              <div class="description">
-                Quisque porta, lacus a faucibus placerat, erat diam aliquam tellus, in mollis erat nunc ut dolor. Etiam ac felis nibh.
-              </div>
-            </div>
-          </div>
+      <div className="btl-CardContainer">
+        <PerspectiveCard
+          title="Save trees"
+          description="Forests are the only livable habitat for a variety of species around the globe. Based on recent research 3.5 billion to 7 billion trees cut down each year."
+          imageUrl={forest}
+          deg={6} />
+        <PerspectiveCard
+          title="Save water"
+          description="More than 8 million tons of plastic is dumped into our oceans every year. We have developed a 'disposable' lifestyle and estimates are that around 50% of plastic is used just once and thrown away."
+          imageUrl={water}
+          deg={6} />
+        <PerspectiveCard
+          title="Save air"
+          description="Burning plastic and other wastes releases dangerous substances such as heavy metals, persistent organic pollutants (POP), and other toxic chemicals into the air and persist in ash waste residues. These chemicals have been linked to the development of asthma, endocrine disruption and cancer."
+          imageUrl={environment}
+          deg={6} />
       </div>
     );
   }
@@ -78,26 +41,10 @@ class Body extends Component {
           height: '200vh'
         }}
       >
-          <div className="ui grid">
-            <div className="two column row">
-              <div className="column">
-                <Diamond width="400px" height="400px" margin="-15em 0em" />
-                <Diamond background="#5000F1" width="200px" height="200px" margin="-5em 0em 0em 30em"/>
-              </div>
-              <div className="column">
-                <div className="btl-mission-description">
-                  <h2 className="btl-mission-description-header">CALLING</h2>
-                  <p className="btl-mission-description-body">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam urna lectus, consequat non ipsum quis, ultrices bibendum mi. Nulla laoreet egestas ultrices. Vestibulum augue elit, malesuada a lectus non, tempus ornare ante. In suscipit sem scelerisque consectetur aliquam. Aenean dapibus vestibulum urna eu tempus. Duis id sem sed nulla maximus.
-                  </p>
-                </div>
-                <Diamond background="#5000F1" width="80px" height="80px" rellaxSpeed={-19} />
-              </div>
-            </div>
-            <div className="ui container btl-cardContainer">
-              {this.renderCards()}
-            </div>
-          </div>
+        <div id="about" className="ui container btl-cardContainer">
+          {this.renderCards()}
+        </div>
+        <Divider className="btl-Divider" variant="middle" light />
       </Section>
     )
   }
