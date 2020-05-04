@@ -24,7 +24,35 @@ class Footer extends Component {
           <FontAwesomeIcon icon={faKickstarterK} size="lg" />
         </div>
       </div>
-    )
+    );
+  }
+
+  getContactSummary() {
+    return (
+      <div className="btl-Footer-Summary">
+        <span className="btl-Footer-Summary-Title">Contact</span>
+        <div className="btl-Footer-Summary-Items">
+          <a href="#team">Team</a>
+          <a className="btl-Footer-Summary-Item">Marketing</a>
+          <a className="btl-Footer-Summary-Item">Partnership</a>
+          <a className="btl-Footer-Summary-Item">Get involved</a>
+        </div>
+      </div>
+    );
+  }
+
+  getResourceSummary() {
+    return (
+      <div className="btl-Footer-Summary">
+        <span className="btl-Footer-Summary-Title">Resources</span>
+        <div className="btl-Footer-Summary-Items">
+          <a>Process of making</a>
+          <a className="btl-Footer-Summary-Item">Impact</a>
+          <a className="btl-Footer-Summary-Item">Insipration</a>
+          <a className="btl-Footer-Summary-Item">Designs</a>
+        </div>
+      </div>
+    );
   }
 
   getTail() {
@@ -50,13 +78,19 @@ class Footer extends Component {
           boxShadow: 'rgba(50, 50, 50, 1) 0px -5px 35px'
         }}
       >
-        <div className="btl-Footer-Container">
+        <div id="contact" className="btl-Footer-Container">
           <div className="btl-Footer-Head">
             <div className="btl-Footer-Row1">
               <Logo />
             </div>
             <div className="btl-Footer-Row2">
-              {this.getSocialSummary()}
+              <div className="btl-Footer-Row2-Left">
+                {this.getContactSummary()}
+                {this.getResourceSummary()}
+              </div>
+              <div className="btl-Footer-Row2-Right">
+                {this.getSocialSummary()}
+              </div>
             </div>
           </div>
           {this.getTail()}

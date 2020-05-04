@@ -1,15 +1,12 @@
 import React, { Component } from 'react';
-import Divider from '@material-ui/core/Divider';
 import Section from '../section/Section';
-import Recycle from '../../assets/recycle.svg';
-import SaveWater from '../../assets/saveWater.svg';
-import SaveForests from '../../assets/saveForests.svg';
 import forest from '../../assets/forest.mp4';
 import water from '../../assets/water.mp4';
 import environment from '../../assets/environment.mp4';
 
 import './Body.scss';
 import PerspectiveCard from '../perspectiveCard/PerspectiveCard';
+import Team from '../team/Team';
 
 class Body extends Component {
   renderCards() {
@@ -38,13 +35,13 @@ class Body extends Component {
     return (
       <Section
         sectionStyles={{
-          height: '200vh'
+          height: '170vh'
         }}
       >
         <div id="about" className="ui container btl-cardContainer">
           {this.renderCards()}
         </div>
-        <Divider className="btl-Divider" variant="middle" light />
+        <Team />
       </Section>
     )
   }
