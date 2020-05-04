@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import Bounce from 'bounce.js';
+
 import './PerspectiveCard.scss';
 
 class PerspectiveCard extends Component {
@@ -8,6 +10,8 @@ class PerspectiveCard extends Component {
     this.imageRef = React.createRef();
     this.videoRef = React.createRef();
 
+    this.initializeBounce();
+
     this.state = {
       rotX: 0,
       rotY: 0,
@@ -15,11 +19,38 @@ class PerspectiveCard extends Component {
       shineY: 0.5,
       pause: true
     };
-
-    this.initialize();
   }
 
-  initialize() {
+  initializeBounce() {
+    const splatToLeft = new Bounce();
+
+    splatToLeft
+      .translate({
+        from: { x: 0, y: 0 },
+        to: { x: 0, y: 0},
+        easing: 'bounce',
+        duration: 600,
+        bounces: 4,
+        stiffness: 4,
+      })
+      .scale({
+        from: { x: 1, y: 1 },
+        to: { x: 0.1, y: 1.5 },
+        easing: 'sway',
+        duration: 800,
+        bounces: 4,
+        stiffness: 2,
+      })
+      .scale({
+        from: { x: 1, y: 1 },
+        to: { x: 3, y: 1 },
+        easing: 'sway',
+        duration: 300,
+        bounces: 4,
+        stiffness: 3,
+      });
+
+      splatToLeft.define('splat-to-left');
   }
 
   componentDidMount() {
@@ -59,13 +90,22 @@ class PerspectiveCard extends Component {
     this.setState({ rotX: 0, rotY: 0, shineX: 0.5, shineY: 0.5, pause: true });
   }
 
+  renderDescription() {
+    return (
+      <div className="btl-CardDescription">
+        {this.props.description}
+      </div>
+    )
+  }
+
   render() {
     this.imageStyle = {
       transform: `rotate3d(${this.state.rotX}, ${this.state.rotY}, 0, ${this.props.deg}deg)`,
     };
     
     this.shineStyle = {
-      background: `radial-gradient(at ${this.state.shineX}% ${this.state.shineY}%, rgba(255, 255, 255, 0.5), transparent)`,
+      background: `radial-gradient(at ${this.state.shineX}% ${this.state.shineY}%, rgba(255, 255, 255, 0.1), transparent)`,
+      boxShadow: this.state.pause ? null : '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)'
     };
 
     return (
@@ -84,9 +124,12 @@ class PerspectiveCard extends Component {
           >
             <source src={this.props.imageUrl} type="video/mp4"></source>
           </video>
+          <div className="btl-CardContent">
+            <h1 className="btl-CardTitle">{ this.props.title }</h1>
+            { !this.state.pause && this.renderDescription() }
+          </div>
           <div className="btl-CardShine" style={this.shineStyle}/>
         </div>
-        {/* <h1 className="btl_CardTitle">{ "Save forests" }</h1> */}
       </div>
     );
   }
