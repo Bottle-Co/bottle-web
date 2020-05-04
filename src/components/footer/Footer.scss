@@ -23,8 +23,20 @@
 
   .btl-Footer-Row2 {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    flex-wrap: wrap;
     margin-top: 3em;
+    padding: 0em 15em;
+  }
+
+  .btl-Footer-Row2-Left {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .btl-Footer-Row2-Right {
+
   }
 
   .btl-Footer-Summary {
@@ -36,9 +48,29 @@
       font-size: 1.2em;
       font-weight: bold;
     }
-  
+
     .btl-Footer-Summary-Description {
       margin-top: 1.5em;
+    }
+
+    .btl-Footer-Summary-Items {
+      display: flex;
+      flex-direction: column;
+      margin-top: 1.5em;
+
+      a {
+        width: fit-content;
+        color: #a2aed2;
+        cursor: pointer;
+      }
+
+      a:hover {
+        color: #a2aed2;
+      }
+    }
+
+    .btl-Footer-Summary-Item {
+      margin-top: 0.5em;
     }
 
     .btl-Footer-Summary-SocialContainer {
