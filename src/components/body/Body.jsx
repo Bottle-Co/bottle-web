@@ -25,7 +25,11 @@ class Body extends Component {
           description="More than 8 million tons of plastic is dumped into our oceans every year. We have developed a 'disposable' lifestyle and estimates are that around 50% of plastic is used just once and thrown away."
           imageUrl={water}
           deg={6} />
-        <PerspectiveCard title="Save air" imageUrl={environment} deg={6} />
+        <PerspectiveCard
+          title="Save air"
+          description="Burning plastic and other wastes releases dangerous substances such as heavy metals, persistent organic pollutants (POP), and other toxic chemicals into the air and persist in ash waste residues. These chemicals have been linked to the development of asthma, endocrine disruption and cancer."
+          imageUrl={environment}
+          deg={6} />
       </div>
     );
   }
