@@ -26,7 +26,7 @@ class JumboTron extends Component {
       >
         <div className="btl-jumbotron-description-container">
           <p className="btl-jumbotron-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec laoreet euismod odio, eget rutrum purus lobortis vitae. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            We make innovative clothes using single-use plastic bottles and sustainable fabrics.
           </p>
           <JumboButton />
         </div>
