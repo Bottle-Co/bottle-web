@@ -1,17 +1,20 @@
 {
   "files": {
-    "main.css": "/bottle-web/static/css/main.413ebb5e.chunk.css",
-    "main.js": "/bottle-web/static/js/main.27494646.chunk.js",
-    "main.js.map": "/bottle-web/static/js/main.27494646.chunk.js.map",
+    "main.css": "/bottle-web/static/css/main.eab64454.chunk.css",
+    "main.js": "/bottle-web/static/js/main.3aff0f5b.chunk.js",
+    "main.js.map": "/bottle-web/static/js/main.3aff0f5b.chunk.js.map",
     "runtime-main.js": "/bottle-web/static/js/runtime-main.6584961b.js",
     "runtime-main.js.map": "/bottle-web/static/js/runtime-main.6584961b.js.map",
-    "static/js/2.094c89ad.chunk.js": "/bottle-web/static/js/2.094c89ad.chunk.js",
-    "static/js/2.094c89ad.chunk.js.map": "/bottle-web/static/js/2.094c89ad.chunk.js.map",
+    "static/js/2.e6dcdac9.chunk.js": "/bottle-web/static/js/2.e6dcdac9.chunk.js",
+    "static/js/2.e6dcdac9.chunk.js.map": "/bottle-web/static/js/2.e6dcdac9.chunk.js.map",
     "index.html": "/bottle-web/index.html",
-    "precache-manifest.402034413df01dc48d3843c38b66ee11.js": "/bottle-web/precache-manifest.402034413df01dc48d3843c38b66ee11.js",
+    "precache-manifest.6e1fe3d5ddccc47795d89efb2079fe3d.js": "/bottle-web/precache-manifest.6e1fe3d5ddccc47795d89efb2079fe3d.js",
     "service-worker.js": "/bottle-web/service-worker.js",
-    "static/css/main.413ebb5e.chunk.css.map": "/bottle-web/static/css/main.413ebb5e.chunk.css.map",
-    "static/js/2.094c89ad.chunk.js.LICENSE.txt": "/bottle-web/static/js/2.094c89ad.chunk.js.LICENSE.txt",
+    "static/css/main.eab64454.chunk.css.map": "/bottle-web/static/css/main.eab64454.chunk.css.map",
+    "static/js/2.e6dcdac9.chunk.js.LICENSE.txt": "/bottle-web/static/js/2.e6dcdac9.chunk.js.LICENSE.txt",
+    "static/media/Badge1.png": "/bottle-web/static/media/Badge1.9e1b0dea.png",
+    "static/media/Badge2.png": "/bottle-web/static/media/Badge2.3af1d5f3.png",
+    "static/media/Badge3.png": "/bottle-web/static/media/Badge3.7a3e5dd1.png",
     "static/media/Logo.scss": "/bottle-web/static/media/BlackBerryJam.c6b7ba1d.ttf",
     "static/media/environment.mp4": "/bottle-web/static/media/environment.9840377b.mp4",
     "static/media/forest.mp4": "/bottle-web/static/media/forest.0b9ced0a.mp4",
@@ -20,8 +23,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6584961b.js",
-    "static/js/2.094c89ad.chunk.js",
-    "static/css/main.413ebb5e.chunk.css",
-    "static/js/main.27494646.chunk.js"
+    "static/js/2.e6dcdac9.chunk.js",
+    "static/css/main.eab64454.chunk.css",
+    "static/js/main.3aff0f5b.chunk.js"
   ]
 }

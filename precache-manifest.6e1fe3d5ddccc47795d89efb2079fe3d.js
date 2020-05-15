@@ -1,27 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "395ff8a6d68100520afcedd42fbf7970",
+    "revision": "d19ac5aeecc6dad1c5bbe135cdb0e932",
     "url": "/bottle-web/index.html"
   },
   {
-    "revision": "df8dd2e33ae4c28bcb03",
-    "url": "/bottle-web/static/css/main.413ebb5e.chunk.css"
+    "revision": "dcfb622a1ab26064ca6e",
+    "url": "/bottle-web/static/css/main.eab64454.chunk.css"
   },
   {
-    "revision": "b9bf6a6dcf43ba35df5e",
-    "url": "/bottle-web/static/js/2.094c89ad.chunk.js"
+    "revision": "f3b961021584307c461c",
+    "url": "/bottle-web/static/js/2.e6dcdac9.chunk.js"
   },
   {
     "revision": "6e742f513d9938d07b2d93218f3e4449",
-    "url": "/bottle-web/static/js/2.094c89ad.chunk.js.LICENSE.txt"
+    "url": "/bottle-web/static/js/2.e6dcdac9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "df8dd2e33ae4c28bcb03",
-    "url": "/bottle-web/static/js/main.27494646.chunk.js"
+    "revision": "dcfb622a1ab26064ca6e",
+    "url": "/bottle-web/static/js/main.3aff0f5b.chunk.js"
   },
   {
     "revision": "358775646a6f592d37f1",
     "url": "/bottle-web/static/js/runtime-main.6584961b.js"
+  },
+  {
+    "revision": "9e1b0dea452dde4e85b517ccb3fee2ed",
+    "url": "/bottle-web/static/media/Badge1.9e1b0dea.png"
+  },
+  {
+    "revision": "3af1d5f39b377859e646f53687630dcf",
+    "url": "/bottle-web/static/media/Badge2.3af1d5f3.png"
+  },
+  {
+    "revision": "7a3e5dd153ab560d4668bd5172864039",
+    "url": "/bottle-web/static/media/Badge3.7a3e5dd1.png"
   },
   {
     "revision": "c6b7ba1dc1c80e00e6c17ac72eb753cc",
