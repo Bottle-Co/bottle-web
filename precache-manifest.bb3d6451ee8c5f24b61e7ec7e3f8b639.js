@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d19ac5aeecc6dad1c5bbe135cdb0e932",
+    "revision": "d38204b11cece8754bdf349cc444fb2a",
     "url": "/bottle-web/index.html"
   },
   {
-    "revision": "dcfb622a1ab26064ca6e",
-    "url": "/bottle-web/static/css/main.eab64454.chunk.css"
+    "revision": "5eff2138ca34d5aa73a7",
+    "url": "/bottle-web/static/css/main.0610dd7a.chunk.css"
   },
   {
-    "revision": "f3b961021584307c461c",
-    "url": "/bottle-web/static/js/2.e6dcdac9.chunk.js"
+    "revision": "43cc3f7a35f34d627320",
+    "url": "/bottle-web/static/js/2.a42f8f0f.chunk.js"
   },
   {
-    "revision": "6e742f513d9938d07b2d93218f3e4449",
-    "url": "/bottle-web/static/js/2.e6dcdac9.chunk.js.LICENSE.txt"
+    "revision": "c64c486544348f10a6d6c716950bc223",
+    "url": "/bottle-web/static/js/2.a42f8f0f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "dcfb622a1ab26064ca6e",
-    "url": "/bottle-web/static/js/main.3aff0f5b.chunk.js"
+    "revision": "5eff2138ca34d5aa73a7",
+    "url": "/bottle-web/static/js/main.e1b216bd.chunk.js"
   },
   {
     "revision": "358775646a6f592d37f1",
@@ -50,6 +50,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "11cb60f0a58740d5d933aef428aea60f",
     "url": "/bottle-web/static/media/life.11cb60f0.mp4"
+  },
+  {
+    "revision": "8b3d0d7bcc99fb2a966039f7cb1fefcc",
+    "url": "/bottle-web/static/media/model1.8b3d0d7b.png"
+  },
+  {
+    "revision": "c6f095e49803c977fa64bf89bfbe0b98",
+    "url": "/bottle-web/static/media/model2.c6f095e4.png"
   },
   {
     "revision": "9955899f4db3e6798e37309c06c65ce9",
