@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d38204b11cece8754bdf349cc444fb2a",
+    "revision": "3b99d4e9dff4e438182bc01c410f7aff",
     "url": "/bottle-web/index.html"
   },
   {
-    "revision": "5eff2138ca34d5aa73a7",
+    "revision": "a6dec82f9dbdab7ed0fb",
     "url": "/bottle-web/static/css/main.0610dd7a.chunk.css"
   },
   {
-    "revision": "43cc3f7a35f34d627320",
-    "url": "/bottle-web/static/js/2.a42f8f0f.chunk.js"
+    "revision": "a7eb5dd0c01887903e9f",
+    "url": "/bottle-web/static/js/2.b8fee6a2.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/bottle-web/static/js/2.a42f8f0f.chunk.js.LICENSE.txt"
+    "url": "/bottle-web/static/js/2.b8fee6a2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5eff2138ca34d5aa73a7",
-    "url": "/bottle-web/static/js/main.e1b216bd.chunk.js"
+    "revision": "a6dec82f9dbdab7ed0fb",
+    "url": "/bottle-web/static/js/main.0e5ae095.chunk.js"
   },
   {
     "revision": "358775646a6f592d37f1",
