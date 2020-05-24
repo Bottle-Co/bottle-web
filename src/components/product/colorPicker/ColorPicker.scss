@@ -1,0 +1,12 @@
+.btl-colorpicker {
+  display: flex;
+  padding: 1em 0em;
+
+  .btl-colorpicker-colorswatch {
+    margin-right: 1em;
+    width: 2em;
+    height: 2em;
+    border: 1px solid #777;
+    border-radius: 50%;
+  }
+}

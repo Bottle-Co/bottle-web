@@ -1,0 +1,34 @@
+.btl-product-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+  
+  .btl-product-config {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-width: 5em;
+    right: 0;
+    position: absolute;
+    padding: 15em 0em;
+  }
+
+  .btl-product-cost {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  .btl-product-description {
+    width: 25em;
+    color: #777;
+    font-size: 1.2em;
+    margin-top: 1.5em;
+  }
+
+  .btl-product-tree {
+    color: #166e16;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+}

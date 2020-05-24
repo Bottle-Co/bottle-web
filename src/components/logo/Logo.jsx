@@ -1,8 +1,8 @@
 import React from 'react';
 import './Logo.scss';
 
-const Logo = () => (
-  <span className="btl-logo">Bottle & Co</span>
+const Logo = (props) => (
+  <span className="btl-logo" style={{ color: props.color }}>Bottle & Co</span>
 );
 
 export default Logo;
