@@ -1,18 +1,20 @@
-.btl-mission-description {
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@1,200&display=swap');
 
+.btl-mission-description {
   .btl-mission-description-header {
-    font-size: 96px;
+    font-size: 1.5em;
     font-weight: 900;
     letter-spacing: 0.12em;
+    font-family: 'Muli', sans-serif;
     color: #333333;
+    margin-bottom: 0.7em;
   }
 
   .btl-mission-description-body {
-    font-size: 1.8em;
+    font-size: 1.2em;
     line-height: 1.7;
     color: #666666;
-    font-weight: 600;
-    width: 35em;
+    font-family: 'Muli', sans-serif;
   }
 }
 
@@ -37,4 +39,11 @@
     width: 10em;
     margin: 0em 8em;
   }
+}
+
+.btl-MaskContainer {
+  margin-top: 1.5em;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
