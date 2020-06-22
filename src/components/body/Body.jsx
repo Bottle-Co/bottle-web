@@ -9,6 +9,8 @@ import Section from '../section/Section';
 import Mask1 from '../../assets/Mask1.jpeg';
 import Mask2 from '../../assets/Mask2.jpeg';
 import Mask3 from '../../assets/Mask3.jpeg';
+import Process from '../../assets/Process.png';
+import BenefitsOfMask from '../../assets/BenefitsOfMask.png';
 
 import './Body.scss';
 import PerspectiveCard from '../perspectiveCard/PerspectiveCard';
@@ -52,7 +54,6 @@ class Body extends Component {
     return (
       <Section
         sectionStyles={{
-          height: '120vh',
           marginTop: '4em'
         }}
       >
@@ -60,34 +61,32 @@ class Body extends Component {
           <div className="btl-mission-description">
             <div className="btl-mission-description-header">Turning care into action</div>
             <p className="btl-mission-description-body">
-              At Bottle&Co, we seek to unlock and fuel the possibility of a sustainable tomorrow.
-              We are focused on the areas of greater needs, on the ways in which we can do the most good.
-              With the alarming levels of environmental degradation, the planet needs a notch above caring,
-              it needs definitive Action. Millions of plastic bottles enter the river-streams, oceans,
-              landfills, etc. and deteriorate the eco-system for flora and fauna alike. Through Bottle&Co,
-              we intend to drive that change to create a sustainable and greener tomorrow.
+              We, at Bottle&Co, believe not only in providing state-of-the-art solutions to modern
+              day problems, but also in ensuring that our initiatives foster the restoration of
+              ecological balance.We create sustainable, breathable and washable/reusable masks
+              for everyone. Our products are manufactured by recycling single-use plastic
+              products, such as bottles.
             </p>
+
+            <img className="btl-mission-description-image" src={Process} />
+
             <p className="btl-mission-description-body">
-              We are the World’s first sustainability-centric organization that facilitates
-              multiple touchpoints with nature, to redress the unprecedented levels of environmental
-              degradation. By 2022, we intend to retract and process 10 Million plastic pet bottles,
-              and plant approximately 15K trees. 
-            </p>
-            <p className="btl-mission-description-body">
-              Bottle&Co is the agent of change for the 21st century. We specialize in curating
-              the most authentic and comfortable blend of fibers from recycled products (plastic bottles).
-              Through our state-of-the-art process, which demands significantly fewer resources, we
-              transform plastic bottles into recycled fiber. Not only do we recycle plastic, but also
-              conserve electricity, save drinking water and emit fewer units of Carbon emissions,
-              everytime we make a product. We use this process to create authentic, breathable and
-              fashionable fabric for everyday use.
+              During this covid-19 crisis, our face-masks act as the first line of defence. To ensure
+              and strengthen safety standards, we have gone a mile ahead, and have curated a
+              fabric with Anti-viral/ bacterial properties. Upon testing this fabric, we observed that
+              it successfully neutralised the effect of any virus/flu (including Covid-19 or
+              Coronavirus), within 10 minutes of contact, in a Lab Experiment. We have coupled
+              this technology with our advanced recycling practice to create an optimal balance of
+              safety, sustainability and welfare.
             </p>
           </div>
+          <hr className="btl-divider"/>
           <div className="btl-MaskContainer">
             <ZoomImageCard image={Mask1} />
             <ZoomImageCard image={Mask2} />
             <ZoomImageCard image={Mask3} />
           </div>
+          <img className="btl-MaskBenefits" src={BenefitsOfMask} />
           {/* {this.renderCards()}
           {this.renderBadges()} */}
         </div>

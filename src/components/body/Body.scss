@@ -16,6 +16,17 @@
     color: #666666;
     font-family: 'Muli', sans-serif;
   }
+
+  .btl-mission-description-image {
+    width: 100%;
+  }
+}
+
+.btl-MaskBenefits {
+  margin-top: 3em;
+  margin-bottom: 3em;
+
+  width: 100%;
 }
 
 .btl-CardContainer {
@@ -27,6 +38,17 @@
   .btl-Card {
     margin: 0em 3em;
   }
+}
+
+.btl-divider {
+  color: #00ebb0;
+  background-color: #00ebb0;
+  height: 0.4em;
+  border-radius: 1em;
+  width: 15em;
+  border: none;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 .btl-BadgeContainer {
