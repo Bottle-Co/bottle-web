@@ -1,29 +1,32 @@
 {
   "files": {
-    "main.css": "/bottle-web/static/css/main.0ffd4519.chunk.css",
-    "main.js": "/bottle-web/static/js/main.bfb63953.chunk.js",
-    "main.js.map": "/bottle-web/static/js/main.bfb63953.chunk.js.map",
+    "main.css": "/bottle-web/static/css/main.4a882ec3.chunk.css",
+    "main.js": "/bottle-web/static/js/main.5f477c83.chunk.js",
+    "main.js.map": "/bottle-web/static/js/main.5f477c83.chunk.js.map",
     "runtime-main.js": "/bottle-web/static/js/runtime-main.6584961b.js",
     "runtime-main.js.map": "/bottle-web/static/js/runtime-main.6584961b.js.map",
-    "static/js/2.f2a33a66.chunk.js": "/bottle-web/static/js/2.f2a33a66.chunk.js",
-    "static/js/2.f2a33a66.chunk.js.map": "/bottle-web/static/js/2.f2a33a66.chunk.js.map",
+    "static/js/2.2b7ea735.chunk.js": "/bottle-web/static/js/2.2b7ea735.chunk.js",
+    "static/js/2.2b7ea735.chunk.js.map": "/bottle-web/static/js/2.2b7ea735.chunk.js.map",
     "index.html": "/bottle-web/index.html",
-    "precache-manifest.19f80cf823d027087fd63c9bb8626b21.js": "/bottle-web/precache-manifest.19f80cf823d027087fd63c9bb8626b21.js",
+    "precache-manifest.6cda0bb27e466dc0b94c683bd8e8ed5f.js": "/bottle-web/precache-manifest.6cda0bb27e466dc0b94c683bd8e8ed5f.js",
     "service-worker.js": "/bottle-web/service-worker.js",
-    "static/css/main.0ffd4519.chunk.css.map": "/bottle-web/static/css/main.0ffd4519.chunk.css.map",
-    "static/js/2.f2a33a66.chunk.js.LICENSE.txt": "/bottle-web/static/js/2.f2a33a66.chunk.js.LICENSE.txt",
+    "static/css/main.4a882ec3.chunk.css.map": "/bottle-web/static/css/main.4a882ec3.chunk.css.map",
+    "static/js/2.2b7ea735.chunk.js.LICENSE.txt": "/bottle-web/static/js/2.2b7ea735.chunk.js.LICENSE.txt",
     "static/media/BenefitsOfMask.png": "/bottle-web/static/media/BenefitsOfMask.a8dafc59.png",
     "static/media/Logo.scss": "/bottle-web/static/media/BlackBerryJam.c6b7ba1d.ttf",
     "static/media/Mask1.jpeg": "/bottle-web/static/media/Mask1.62ec4b91.jpeg",
     "static/media/Mask2.jpeg": "/bottle-web/static/media/Mask2.da7c43f4.jpeg",
     "static/media/Mask3.jpeg": "/bottle-web/static/media/Mask3.4a49ff26.jpeg",
     "static/media/Process.png": "/bottle-web/static/media/Process.9cbdcf77.png",
-    "static/media/life.mp4": "/bottle-web/static/media/life.11cb60f0.mp4"
+    "static/media/environment.mp4": "/bottle-web/static/media/environment.9840377b.mp4",
+    "static/media/forest.mp4": "/bottle-web/static/media/forest.0b9ced0a.mp4",
+    "static/media/life.mp4": "/bottle-web/static/media/life.11cb60f0.mp4",
+    "static/media/water.mp4": "/bottle-web/static/media/water.9955899f.mp4"
   },
   "entrypoints": [
     "static/js/runtime-main.6584961b.js",
-    "static/js/2.f2a33a66.chunk.js",
-    "static/css/main.0ffd4519.chunk.css",
-    "static/js/main.bfb63953.chunk.js"
+    "static/js/2.2b7ea735.chunk.js",
+    "static/css/main.4a882ec3.chunk.css",
+    "static/js/main.5f477c83.chunk.js"
   ]
 }
