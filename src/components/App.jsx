@@ -8,21 +8,10 @@ import $ from 'jquery';
 
 import './App.scss';
 import NavigationLink from './NavigationLink/NavigationLink';
+import Parallax from './parallax/parallax';
 
 const App = () => (
-  <div className="btl-App">
-    <Header>
-      <Logo />
-      <div className="btl-NaviagtionLink-Container">
-        <NavigationLink href="#about" label="About" />
-        <NavigationLink href="#team" label="Team" />
-        <NavigationLink href="#contact" label="Contact" />
-      </div>
-    </Header>
-    <JumboTron />
-    <Body />
-    <Footer />
-  </div>
+  <Parallax />
 );
 
 export default App;

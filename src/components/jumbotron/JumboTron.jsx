@@ -17,8 +17,9 @@ class JumboTron extends Component {
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '100%',
-          backgroundColor: 'rgba(0,0,0,0.35)'
+          height: '100vh',
+          backgroundColor: 'rgba(0,0,0,0.35)',
+          position: 'absolute'
         }}
         sectionStyles={{
             height: '100vh',

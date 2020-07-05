@@ -30,13 +30,13 @@
 }
 
 .btl-CardContainer {
+  width: 100vh;
   display: flex;
   justify-content: center;
-  margin: 0em 10em;
   padding: 5em;
 
   .btl-Card {
-    margin: 0em 3em;
+    margin: 0em 2em;
   }
 }
 
