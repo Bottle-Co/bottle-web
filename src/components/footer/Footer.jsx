@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import Section from '../section/Section';
 import Logo from '../logo/Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faInstagram, faTwitter, faKickstarterK } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookF, faInstagram, faTwitter, faKickstarterK, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
+import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 
 import './Footer.scss';
 
@@ -18,10 +19,22 @@ class Footer extends Component {
           Follow us on social media to find out the latest updates on our progress.
         </div>
         <div className="btl-Footer-Summary-SocialContainer">
-          <FontAwesomeIcon icon={faTwitter} size="lg"/>
-          <FontAwesomeIcon icon={faFacebookF} size="lg" />
-          <FontAwesomeIcon icon={faInstagram} size="lg" />
-          <FontAwesomeIcon icon={faKickstarterK} size="lg" />
+          <FontAwesomeIcon className="btl-connect-button" icon={faTwitter} size="lg" />
+          <FontAwesomeIcon className="btl-connect-button" icon={faFacebookF} size="lg"/>
+          <FontAwesomeIcon className="btl-connect-button" icon={faInstagram} size="lg" />
+          <FontAwesomeIcon className="btl-connect-button" icon={faKickstarterK} size="lg" />
+        </div>
+      </div>
+    );
+  }
+
+  getEmailSummary() {
+    return (
+      <div className="btl-Footer-Summary" style={{marginBottom: '2em'}}>
+        <span className="btl-Footer-Summary-Title">Get in touch</span>
+        <div className="btl-Footer-Summary-SocialContainer">
+          <FontAwesomeIcon className="btl-connect-button" icon={faEnvelopeOpen} size="lg" onClick={() => window.location.href='mailto:info@bottlenco.com'}/>
+          <FontAwesomeIcon className="btl-connect-button" icon={faFacebookMessenger} size="lg" />
         </div>
       </div>
     );
@@ -89,6 +102,7 @@ class Footer extends Component {
                 {this.getResourceSummary()}
               </div>
               <div className="btl-Footer-Row2-Right">
+                {this.getEmailSummary()}
                 {this.getSocialSummary()}
               </div>
             </div>

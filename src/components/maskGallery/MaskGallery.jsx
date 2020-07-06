@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ZoomImageCard from '../zoomImageCard/ZoomImageCard';
+import {loadStripe} from '@stripe/stripe-js';
 import Mask1 from '../../assets/Mask1.jpeg';
 import Mask2 from '../../assets/Mask2.jpeg';
 import Mask3 from '../../assets/Mask3.jpeg';
@@ -55,7 +56,7 @@ class MaskGallery extends Component {
               {this.getFocusHeader()}
               {this.getFocusBullets()}
             </div>
-            <button class="ui blue button">Buy</button>
+            <button class="ui blue button" id={`checkout-button-${this.getStripePriceId()}`} onClick={this.getBuyOnClick()}>Buy</button>
           </div>
         </div>
         <button class="circular ui icon button btl-product-cancel" onClick={() => this.setState({ selectedProduct: null })}>
@@ -63,6 +64,49 @@ class MaskGallery extends Component {
         </button>
       </div>
     );
+  }
+
+  getStripePriceId() {
+    switch (this.state.selectedProduct) {
+      case 1:
+        return 'price_1H1HOtD8YQ9Kv8aM5mXxskDP';
+
+      case 2:
+        return 'price_1H1HOID8YQ9Kv8aM2Y7EZyCa';
+
+      case 3:
+        return 'price_1GuGY0D8YQ9Kv8aMTyrgxSW7';
+
+      default:
+        return null;
+    }
+  }
+
+  getBuyOnClick() {
+    let price = this.getStripePriceId();
+
+    return () => {
+      var stripe = loadStripe('pk_test_51GreEtD8YQ9Kv8aMl8TubaNyh4BIb60hXhXzuDylgzvlhEub4bv76ZxufGdFbPLwkOYthGCdgxRM3pKwaYDSKsDT00eFSXjkX1');
+      stripe.then(s => s.redirectToCheckout({
+        lineItems: [{ price , quantity: 1}],
+        mode: 'payment',
+        // Do not rely on the redirect to the successUrl for fulfilling
+        // purchases, customers may not always reach the success_url after
+        // a successful payment.
+        // Instead use one of the strategies described in
+        // https://stripe.com/docs/payments/checkout/fulfillment
+        successUrl: 'https://your-website.com/success',
+        cancelUrl: 'https://your-website.com/canceled',
+      })
+      .then(function (result) {
+        if (result.error) {
+          // If `redirectToCheckout` fails due to a browser or network
+          // error, display the localized error message to your customer.
+          var displayError = document.getElementById('error-message');
+          displayError.textContent = result.error.message;
+        }
+      }));
+    }
   }
 
   getFocusHeader() {
