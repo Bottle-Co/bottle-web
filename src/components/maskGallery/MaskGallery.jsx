@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ZoomImageCard from '../zoomImageCard/ZoomImageCard';
+import ProductCard from '../productCard/productCard';
 import {loadStripe} from '@stripe/stripe-js';
 import Mask1 from '../../assets/Mask1.jpeg';
 import Mask2 from '../../assets/Mask2.jpeg';
@@ -22,6 +23,54 @@ class MaskGallery extends Component {
         <ZoomImageCard id="1" image={Mask1} onClick={() => this.setState({ selectedProduct: 1 })} />
         <ZoomImageCard id="2" image={Mask2} onClick={() => this.setState({ selectedProduct: 2 })} />
         <ZoomImageCard id="3" image={Mask3} onClick={() => this.setState({ selectedProduct: 3 })} />
+      </React.Fragment>
+    )
+  }
+
+  getAllProductsV2() {
+    return (
+      <React.Fragment>
+        <ProductCard
+          id="1"
+          baseColor="#54f38a"
+          headGradientStart="#54f38a"
+          headGradientEnd="#0ba23e"
+          headTitle="Space Journey"
+          headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
+          backText="BOT"
+          bodyTitle="Space Journey"
+          bodyCaption="Ant-viral mask"
+          isNew={true}
+          onClick={() => this.setState({ selectedProduct: 1 })}
+        />
+
+        <ProductCard
+          id="2"
+          baseColor="#54f38a"
+          headGradientStart="#ff8ea1"
+          headGradientEnd="#ff4261"
+          headTitle="Space Journey"
+          headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
+          backText="BOT"
+          bodyTitle="Space Journey"
+          bodyCaption="Ant-viral mask"
+          isNew={true}
+          onClick={() => this.setState({ selectedProduct: 2 })}
+        />
+
+        <ProductCard
+          id="3"
+          baseColor="#54f38a"
+          headGradientStart="#00cdcd"
+          headGradientEnd="#008181"
+          headTitle="Space Journey"
+          headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
+          backText="BOT"
+          bodyTitle="Space Journey"
+          bodyCaption="Ant-viral mask"
+          isNew={true}
+          onClick={() => this.setState({ selectedProduct: 3 })}
+        />
       </React.Fragment>
     )
   }
@@ -173,7 +222,7 @@ class MaskGallery extends Component {
     console.log(this.state);
     return (
       <div className="btl-mask-gallery">
-        {!this.state.selectedProduct && this.getAllProducts()}
+        {!this.state.selectedProduct && this.getAllProductsV2()}
         {this.state.selectedProduct && this.getProductFocusView()}
       </div>
     );
