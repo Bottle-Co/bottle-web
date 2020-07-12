@@ -1,19 +1,21 @@
 {
   "files": {
-    "main.css": "/bottle-web/static/css/main.330b20d3.chunk.css",
-    "main.js": "/bottle-web/static/js/main.7a11ff52.chunk.js",
-    "main.js.map": "/bottle-web/static/js/main.7a11ff52.chunk.js.map",
+    "main.css": "/bottle-web/static/css/main.009b6241.chunk.css",
+    "main.js": "/bottle-web/static/js/main.5eaa7f07.chunk.js",
+    "main.js.map": "/bottle-web/static/js/main.5eaa7f07.chunk.js.map",
     "runtime-main.js": "/bottle-web/static/js/runtime-main.6584961b.js",
     "runtime-main.js.map": "/bottle-web/static/js/runtime-main.6584961b.js.map",
-    "static/js/2.1628db44.chunk.js": "/bottle-web/static/js/2.1628db44.chunk.js",
-    "static/js/2.1628db44.chunk.js.map": "/bottle-web/static/js/2.1628db44.chunk.js.map",
+    "static/js/2.893fb273.chunk.js": "/bottle-web/static/js/2.893fb273.chunk.js",
+    "static/js/2.893fb273.chunk.js.map": "/bottle-web/static/js/2.893fb273.chunk.js.map",
     "index.html": "/bottle-web/index.html",
-    "precache-manifest.7363f2dd5d4b84e57a7eb4d29c04de0b.js": "/bottle-web/precache-manifest.7363f2dd5d4b84e57a7eb4d29c04de0b.js",
+    "precache-manifest.4e9498c88367b5afda15be39a22924a3.js": "/bottle-web/precache-manifest.4e9498c88367b5afda15be39a22924a3.js",
     "service-worker.js": "/bottle-web/service-worker.js",
-    "static/css/main.330b20d3.chunk.css.map": "/bottle-web/static/css/main.330b20d3.chunk.css.map",
-    "static/js/2.1628db44.chunk.js.LICENSE.txt": "/bottle-web/static/js/2.1628db44.chunk.js.LICENSE.txt",
+    "static/css/main.009b6241.chunk.css.map": "/bottle-web/static/css/main.009b6241.chunk.css.map",
+    "static/js/2.893fb273.chunk.js.LICENSE.txt": "/bottle-web/static/js/2.893fb273.chunk.js.LICENSE.txt",
     "static/media/BenefitsOfMask.png": "/bottle-web/static/media/BenefitsOfMask.a8dafc59.png",
     "static/media/Logo.scss": "/bottle-web/static/media/BlackBerryJam.c6b7ba1d.ttf",
+    "static/media/BottleLogoT.png": "/bottle-web/static/media/BottleLogoT.5db7e1ee.png",
+    "static/media/Mask1.png": "/bottle-web/static/media/Mask1.336838fd.png",
     "static/media/Mask1.jpeg": "/bottle-web/static/media/Mask1.62ec4b91.jpeg",
     "static/media/Mask2.jpeg": "/bottle-web/static/media/Mask2.da7c43f4.jpeg",
     "static/media/Mask3.jpeg": "/bottle-web/static/media/Mask3.4a49ff26.jpeg",
@@ -25,8 +27,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6584961b.js",
-    "static/js/2.1628db44.chunk.js",
-    "static/css/main.330b20d3.chunk.css",
-    "static/js/main.7a11ff52.chunk.js"
+    "static/js/2.893fb273.chunk.js",
+    "static/css/main.009b6241.chunk.css",
+    "static/js/main.5eaa7f07.chunk.js"
   ]
 }

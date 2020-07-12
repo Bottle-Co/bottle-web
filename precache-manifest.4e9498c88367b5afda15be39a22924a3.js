@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ded2eaee2390f53d6991d671fbb65ba9",
+    "revision": "7eb24836c9a4e58c0735f3d3550829e8",
     "url": "/bottle-web/index.html"
   },
   {
-    "revision": "e60b9174e6ade6c68912",
-    "url": "/bottle-web/static/css/main.330b20d3.chunk.css"
+    "revision": "03ae47be18437a9b1221",
+    "url": "/bottle-web/static/css/main.009b6241.chunk.css"
   },
   {
-    "revision": "e5800388d0dce3521f1d",
-    "url": "/bottle-web/static/js/2.1628db44.chunk.js"
+    "revision": "49dd19e23b9c270f884d",
+    "url": "/bottle-web/static/js/2.893fb273.chunk.js"
   },
   {
     "revision": "e2b95e3f008e6bcc160ad194988b17ee",
-    "url": "/bottle-web/static/js/2.1628db44.chunk.js.LICENSE.txt"
+    "url": "/bottle-web/static/js/2.893fb273.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e60b9174e6ade6c68912",
-    "url": "/bottle-web/static/js/main.7a11ff52.chunk.js"
+    "revision": "03ae47be18437a9b1221",
+    "url": "/bottle-web/static/js/main.5eaa7f07.chunk.js"
   },
   {
     "revision": "358775646a6f592d37f1",
@@ -30,6 +30,14 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c6b7ba1dc1c80e00e6c17ac72eb753cc",
     "url": "/bottle-web/static/media/BlackBerryJam.c6b7ba1d.ttf"
+  },
+  {
+    "revision": "5db7e1ee6f6183b16571e266ce5a6287",
+    "url": "/bottle-web/static/media/BottleLogoT.5db7e1ee.png"
+  },
+  {
+    "revision": "336838fdbbafa6bef6e470c8fc351436",
+    "url": "/bottle-web/static/media/Mask1.336838fd.png"
   },
   {
     "revision": "62ec4b91770a12e068dd008cfa4b82f6",
