@@ -16,6 +16,7 @@ import MaskGallery from '../maskGallery/MaskGallery';
 import Process from '../../assets/Process.png';
 import './parallax.scss';
 import Footer from '../footer/Footer';
+import ProductCard from '../productCard/productCard';
 
 class Parallax extends React.Component {
   
@@ -137,12 +138,12 @@ class Parallax extends React.Component {
               <p className="btl-mission-description-body">
                 During this covid-19 crisis, our face-masks act as the first line of defence. To ensure and strengthen
                 safety standards, we have gone a mile ahead, and have curated a fabric with Anti-viral & Anti-bacterial
-                properties. 
+                properties.
               </p>
 
               <MaskGallery />
 
-              <p className="btl-mission-description-body" style={{ marginTop: "1em" }}>
+              <p className="btl-mission-description-body" style={{ marginTop: "5em" }}>
                 Upon testing this fabric, we observed that it successfully neutralised 99.9% of any virus/flu, within 30
                 minutes of contact. Once the virus is in proximity to the Face Mask, iProtect attracts the virus
                 through a positive charge and  captures it by locking on to the virus protein. The virus membrane begins to

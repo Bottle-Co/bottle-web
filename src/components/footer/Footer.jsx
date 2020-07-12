@@ -72,11 +72,11 @@ class Footer extends Component {
     return (
       <div className="btl-Footer-Tail">
         <div className="btl-Footer-CopyRight">&copy; Bottle & Co. All rights reserved</div>
-        <div className="btl-Footer-TailLinks">
+        {/* <div className="btl-Footer-TailLinks">
           <div>Terms of Service</div>
           <div>Privacy Policy</div>
           <div>Security</div>
-        </div>
+        </div> */}
       </div>
     )
   }
