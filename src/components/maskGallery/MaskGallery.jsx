@@ -37,7 +37,6 @@ class MaskGallery extends Component {
           headGradientEnd="#0ba23e"
           headTitle="Space Journey"
           headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
-          backText="BOT"
           bodyTitle="Space Journey"
           bodyCaption="Ant-viral mask"
           isNew={true}
@@ -51,7 +50,6 @@ class MaskGallery extends Component {
           headGradientEnd="#ff4261"
           headTitle="Space Journey"
           headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
-          backText="BOT"
           bodyTitle="Space Journey"
           bodyCaption="Ant-viral mask"
           isNew={true}
@@ -65,7 +63,6 @@ class MaskGallery extends Component {
           headGradientEnd="#008181"
           headTitle="Space Journey"
           headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
-          backText="BOT"
           bodyTitle="Space Journey"
           bodyCaption="Ant-viral mask"
           isNew={true}
@@ -223,7 +220,7 @@ class MaskGallery extends Component {
     return (
       <div className="btl-mask-gallery">
         {!this.state.selectedProduct && this.getAllProductsV2()}
-        {this.state.selectedProduct && this.getProductFocusView()}
+        {/* {this.state.selectedProduct && this.getProductFocusView()} */}
       </div>
     );
   }
