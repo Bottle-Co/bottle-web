@@ -35,9 +35,9 @@ class MaskGallery extends Component {
           baseColor="#54f38a"
           headGradientStart="#54f38a"
           headGradientEnd="#0ba23e"
-          headTitle="Space Journey"
+          headTitle="Regular"
           headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
-          bodyTitle="Space Journey"
+          bodyTitle="Regular"
           bodyCaption="Ant-viral mask"
           isNew={true}
           onClick={() => this.setState({ selectedProduct: 1 })}
@@ -48,9 +48,9 @@ class MaskGallery extends Component {
           baseColor="#54f38a"
           headGradientStart="#ff8ea1"
           headGradientEnd="#ff4261"
-          headTitle="Space Journey"
+          headTitle="Enviro"
           headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
-          bodyTitle="Space Journey"
+          bodyTitle="Enviro"
           bodyCaption="Ant-viral mask"
           isNew={true}
           onClick={() => this.setState({ selectedProduct: 2 })}
@@ -61,9 +61,9 @@ class MaskGallery extends Component {
           baseColor="#54f38a"
           headGradientStart="#00cdcd"
           headGradientEnd="#008181"
-          headTitle="Space Journey"
+          headTitle="N95 Hybrid"
           headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
-          bodyTitle="Space Journey"
+          bodyTitle="N95 Hybrid"
           bodyCaption="Ant-viral mask"
           isNew={true}
           onClick={() => this.setState({ selectedProduct: 3 })}

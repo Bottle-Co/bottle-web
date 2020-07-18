@@ -3,6 +3,9 @@ import PropTypes from 'prop-types';
 import './productCard.scss';
 import Mask1 from '../../assets/Mask1.png'
 import Logo from '../../assets/BottleLogoT.png';
+import StylePicker from '../stylePicker/stylePicker';
+import BuyButton from '../buyButton/buyButton';
+import QuantityPicker from '../quantityPicker/quantityPicker';
 
 class ProductCard extends Component {
   constructor(props) {
@@ -14,7 +17,9 @@ class ProductCard extends Component {
   }
 
   onClick = () => {
-    this.setState({ isFlipped: !this.state.isFlipped });
+    if (!this.state.isFlipped) {
+      this.setState({ isFlipped: !this.state.isFlipped });
+    }
 
     // TODO: Do props onClick
   }
@@ -90,7 +95,46 @@ class ProductCard extends Component {
 
   renderBackCardBody = () => {
     return (
-      <div className="btl-productcard-card-body">
+      <div className="btl-productcard-card-body btl-productcard-back">
+        <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", height: "100%" }}>
+          <div>
+            <StylePicker styles={[
+              {
+                id: "584b8fbb-66f2-4b6b-b438-699fdf47499a",
+                color: "#F56651",
+                title: "Black"
+              },
+              {
+                id: "a3a3d1f6-9f27-4537-ab77-25a7c5da7f43",
+                color: "#7AE9C9",
+                title: "Black"
+              },
+              {
+                id: "3e7961ec-0cac-4112-9a4a-0bfa9adc12a1",
+                color: "#606A92",
+                title: "Black"
+              },
+              {
+                id: "d9c37e10-1e46-443b-aab4-87c319e1576b",
+                color: "#FDCD47",
+                title: "Black"
+              }
+            ]}/>
+            <QuantityPicker
+              options={[
+                {
+                  id: "565dcd7a-00dc-4d9e-a2de-819ae44fc016",
+                  label: "Single mask"
+                },
+                {
+                  id: "cebd3e1a-aaa3-40ac-880c-88a03959a7b2",
+                  label: "Pack of 3"
+                }
+              ]}
+            />
+          </div>
+          <BuyButton />
+        </div>
       </div>
     );
   }
