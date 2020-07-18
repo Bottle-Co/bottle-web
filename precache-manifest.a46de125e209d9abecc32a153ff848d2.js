@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fdcf41b029420d0a496f1f790d2879d0",
+    "revision": "2fdc817a84bb70ac4cebe1aaa138b574",
     "url": "/bottle-web/index.html"
   },
   {
-    "revision": "db4dd3eb2af364635556",
-    "url": "/bottle-web/static/css/main.fda04b59.chunk.css"
+    "revision": "9776c035a57d577d3a48",
+    "url": "/bottle-web/static/css/main.99f368f9.chunk.css"
   },
   {
-    "revision": "08853ab55c4ac54b5844",
-    "url": "/bottle-web/static/js/2.deb7f55e.chunk.js"
+    "revision": "ca87fa3332e63bad96be",
+    "url": "/bottle-web/static/js/2.3a6890d1.chunk.js"
   },
   {
     "revision": "e2b95e3f008e6bcc160ad194988b17ee",
-    "url": "/bottle-web/static/js/2.deb7f55e.chunk.js.LICENSE.txt"
+    "url": "/bottle-web/static/js/2.3a6890d1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "db4dd3eb2af364635556",
-    "url": "/bottle-web/static/js/main.b64c0ffb.chunk.js"
+    "revision": "9776c035a57d577d3a48",
+    "url": "/bottle-web/static/js/main.4ec149f2.chunk.js"
   },
   {
     "revision": "358775646a6f592d37f1",
