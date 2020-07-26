@@ -71,39 +71,28 @@ class Parallax extends React.Component {
   render() {
     return (
       <React.Fragment>
-        <Header>
-        <Logo />
-        <div className="btl-NaviagtionLink-Container">
-          <NavigationLink href="#about" label="About" />
-          <NavigationLink href="#shop" label="Shop" />
-          <NavigationLink href="#contact" label="Contact" />
-        </div>
-        </Header>
+        <Header />
         <JumboTron />
 
-        <div className="btl-parallax-top">
-          <div id="about" className="btl-section-content">
-            <div className="btl-mission-description">
-              <div className="btl-mission-description-header">What we do</div>
-              <p className="btl-mission-description-body">
-                We, at Bottle&Co, believe not only in providing state-of-the-art solutions to modern day problems,
-                but also in ensuring that our initiatives foster the restoration of ecological balance.
-                We create sustainable, breathable and washable masks for everyone. Our products are a mix of RPet,
-                churned out of single-use plastic products such as bottles, and an array of sustainable fabrics.
-              </p>
+        {/* <div id="about" className="btl-parallax-top container">
+            <h1>What we do</h1>
+            <p className="btl-mission-description-body">
+              We, at Bottle&Co, believe not only in providing state-of-the-art solutions to modern day problems,
+              but also in ensuring that our initiatives foster the restoration of ecological balance.
+              We create sustainable, breathable and washable masks for everyone. Our products are a mix of RPet,
+              churned out of single-use plastic products such as bottles, and an array of sustainable fabrics.
+            </p>
 
-              <img className="btl-mission-description-image" src={Process} />
+            <img className="btl-mission-description-image" src={Process} />
 
-              <p className="btl-mission-description-body">
-                To stay relevant in these unprecedented times, Bottle&Co has come up with a technology, iProtect,
-                that offers a comprehensive solution. <b>iProtect</b> has Antiviral and Antibacterial against enveloped
-                viruses and bacteria, and lasts effectively for at least 15-20  washes at 40°C (104°F). Rapid antiviral
-                effect of the fabric successfully eliminates any potential threat within 30 mins of contamination, through
-                its <b>self-sanitizing</b> and <b>germ resistant surface</b>. The mask is made water repellent to prevent droplets from
-                penetrating the surface, thereby making it an all-rounder.
-              </p>
-            </div>
-          </div>
+            <p className="btl-mission-description-body">
+              To stay relevant in these unprecedented times, Bottle&Co has come up with a technology, iProtect,
+              that offers a comprehensive solution. <b>iProtect</b> has Antiviral and Antibacterial against enveloped
+              viruses and bacteria, and lasts effectively for at least 15-20  washes at 40°C (104°F). Rapid antiviral
+              effect of the fabric successfully eliminates any potential threat within 30 mins of contamination, through
+              its <b>self-sanitizing</b> and <b>germ resistant surface</b>. The mask is made water repellent to prevent droplets from
+              penetrating the surface, thereby making it an all-rounder.
+            </p>
         </div>
 
         <div className="btl-parallax-bottom">
@@ -154,8 +143,8 @@ class Parallax extends React.Component {
             </div>
           </div>
         </div>
-      
-        <Footer />
+       */}
+        {/* <Footer /> */}
       </React.Fragment>
     );
   }

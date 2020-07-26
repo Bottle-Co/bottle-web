@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap");
+@import '../../shared/palette';
+
+.infromation-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+.information {
+  max-width: 30em;
+  margin: 2em;
+  font-family: "Barlow";
+  font-size: 1.25em;
+
+  .title {
+    color: $color7;
+  }
+
+  .description {
+    margin-top: 0.5em;
+    color: $color8;
+  }
+}
