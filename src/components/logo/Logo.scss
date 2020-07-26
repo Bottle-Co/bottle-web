@@ -1,11 +1,13 @@
+@import '../../shared/palette';
+
 @font-face {
   font-family: 'BlackBerry';
   src: url('../../assets/BlackBerryJam.ttf') format('truetype');
 }
 
 .btl-logo {
+  margin-top: 0.5em;
   font-family: 'BlackBerry';
-  color: white;
-  padding: 2em;
+  color: $color9;
   font-size: xx-large;
 }

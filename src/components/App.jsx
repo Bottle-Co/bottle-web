@@ -1,17 +1,13 @@
 import React from 'react';
-import Header from './header/Header';
-import Logo from './logo/Logo';
-import JumboTron from './jumbotron/JumboTron';
-import Body from './body/Body';
-import Footer from './footer/Footer';
-import $ from 'jquery';
-
-import './App.scss';
-import NavigationLink from './NavigationLink/NavigationLink';
-import Parallax from './parallax/parallax';
+import { Route, Switch } from 'react-router-dom';
+import Home from './home/home';
+import { Shop } from './shop/shop';
 
 const App = () => (
-  <Parallax />
+  <Switch>
+    <Route path="/" component={Home} exact />
+    <Route path="/shop" component={Shop} />
+  </Switch>
 );
 
 export default App;
