@@ -1,8 +1,10 @@
+@import '../../shared/palette.scss';
+
 .btl-productcard-container {
   font-family: 'Roboto', sans-serif;
   min-width: 290px;
   width: 290px;
-  height: 500px;
+  height: auto;
   margin: 30px 38px;
   cursor: pointer;
   perspective: 800px;
@@ -125,7 +127,7 @@
 
     .btl-productcard-product-price {
       position: absolute;
-      background: #11e95b;
+      background: $color6;
       padding: 7px 20px;
       text-align: center;
       display: inline-block;
@@ -135,7 +137,11 @@
       border-radius: 7px;
       margin-top: -13px;
       margin-left: 8.5em;
-      box-shadow: -10px 20px 15px -10px rgba(17, 233, 91, 0.3);
+      box-shadow: 0 1px 1px 1px rgba(0,0,0,0.11),
+                  0 2px 2px 2px rgba(0,0,0,0.11),
+                  0 4px 4px 4px rgba(0,0,0,0.11),
+                  0 8px 8px 8px rgba(0,0,0,0.11),
+                  0 16px 16px 16px rgba(0,0,0,0.11);
 
       b {
         margin-left: 5px;
@@ -156,8 +162,8 @@
     position: relative;
     font-size: 10px;
     font-weight: 300;
-    color: #fff;
-    background: #11e95b;
+    color: $color9;
+    background: $color10;
     padding: 2px 5px;
     border-radius: 4px;
     top: -2px;
