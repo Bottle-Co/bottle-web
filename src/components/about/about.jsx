@@ -57,7 +57,7 @@ class About extends Component {
               height: 450,
               position: "left",
               style: {
-                marginLeft: "10em"
+                marginLeft: "7em"
               }
             }}
           />

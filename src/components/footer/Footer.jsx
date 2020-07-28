@@ -28,18 +28,6 @@ class Footer extends Component {
     );
   }
 
-  getEmailSummary() {
-    return (
-      <div className="btl-Footer-Summary" style={{marginBottom: '2em'}}>
-        <span className="btl-Footer-Summary-Title">Get in touch</span>
-        <div className="btl-Footer-Summary-SocialContainer">
-          <FontAwesomeIcon className="btl-connect-button" icon={faEnvelopeOpen} size="lg" onClick={() => window.location.href='mailto:info@bottlenco.com'}/>
-          <FontAwesomeIcon className="btl-connect-button" icon={faFacebookMessenger} size="lg" />
-        </div>
-      </div>
-    );
-  }
-
   getContactSummary() {
     return (
       <div className="btl-Footer-Summary">
@@ -83,33 +71,23 @@ class Footer extends Component {
 
   render() {
     return (
-      <Section
-        sectionStyles={{
-          backgroundColor: '#10182f',
-          height: '50vh',
-          width: '100%',
-          boxShadow: 'rgba(50, 50, 50, 1) 0px -5px 35px'
-        }}
-      >
-        <div id="contact" className="btl-Footer-Container">
-          <div className="btl-Footer-Head">
-            <div className="btl-Footer-Row1">
-              <Logo />
+      <div id="contact" className="btl-Footer-Container">
+        <div className="btl-Footer-Head">
+          <div className="btl-Footer-Row1">
+            <Logo />
+          </div>
+          <div className="btl-Footer-Row2">
+            <div className="btl-Footer-Row2-Left">
+              {this.getContactSummary()}
+              {this.getResourceSummary()}
             </div>
-            <div className="btl-Footer-Row2">
-              <div className="btl-Footer-Row2-Left">
-                {this.getContactSummary()}
-                {this.getResourceSummary()}
-              </div>
-              <div className="btl-Footer-Row2-Right">
-                {this.getEmailSummary()}
-                {this.getSocialSummary()}
-              </div>
+            <div className="btl-Footer-Row2-Right">
+              {this.getSocialSummary()}
             </div>
           </div>
-          {this.getTail()}
         </div>
-      </Section>
+        {this.getTail()}
+      </div>
     )
   }
 }
