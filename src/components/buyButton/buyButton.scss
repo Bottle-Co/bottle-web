@@ -1,3 +1,5 @@
+@import '../../shared/palette.scss';
+
 .btl-buy-container {
   width: 100%;
   display: flex;
@@ -8,25 +10,22 @@
 .btl-buy-price {
   font-size: 1.5em;
   align-self: center;
-  color: #1baa4c;
+  color: $color6;
 }
 
 .btl-buy {
   border: none;
   text-decoration: none;
-  background: #11e95b;
+  background: $color6;
   padding: 0.35em;
   color: white;
   font-size: 1.5em;
   font-weight: 200;
   border-radius: 7px;
-  box-shadow: 0px 20px 15px -10px rgba(17, 233, 91, 0.3);
   transition: all .2s;
   cursor: pointer;
-  
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0px 23px 15px -10px rgba(17, 233, 91, 0.3);
   }
 }

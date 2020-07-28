@@ -33,7 +33,7 @@ class Hamburger extends Component {
             <a href="#" className="btl-sidebar-anchor">About</a>
           </li>
           <li className="btl-sidebar-item">
-            <a href="/shop" className="btl-sidebar-anchor">Shop</a>
+            <a href="#/shop" className="btl-sidebar-anchor">Shop</a>
           </li>
         </ul>
       </div>

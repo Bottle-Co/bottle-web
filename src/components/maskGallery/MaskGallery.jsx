@@ -32,9 +32,9 @@ class MaskGallery extends Component {
       <React.Fragment>
         <ProductCard
           id="1"
-          baseColor="#54f38a"
-          headGradientStart="#54f38a"
-          headGradientEnd="#0ba23e"
+          baseColor="#95D5B2"
+          headGradientStart="#95D5B2"
+          headGradientEnd="#40916C"
           headTitle="Regular"
           headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
           bodyTitle="Regular"
@@ -45,9 +45,9 @@ class MaskGallery extends Component {
 
         <ProductCard
           id="2"
-          baseColor="#54f38a"
-          headGradientStart="#ff8ea1"
-          headGradientEnd="#ff4261"
+          baseColor="#95D5B2"
+          headGradientStart="#95D5B2"
+          headGradientEnd="#2D6A4F"
           headTitle="Enviro"
           headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
           bodyTitle="Enviro"
@@ -58,9 +58,9 @@ class MaskGallery extends Component {
 
         <ProductCard
           id="3"
-          baseColor="#54f38a"
-          headGradientStart="#00cdcd"
-          headGradientEnd="#008181"
+          baseColor="#95D5B2"
+          headGradientStart="#95D5B2"
+          headGradientEnd="#081C15"
           headTitle="N95 Hybrid"
           headDescription="Soft fabric that covers entire face, non-woven fabric, light & breathable. 3-Ply, with a melt-blown polypropylene filtration layer."
           bodyTitle="N95 Hybrid"
