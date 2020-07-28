@@ -9,7 +9,7 @@ class Information extends Component {
           this.props.image &&
           this.props.image.position === "left" &&
           <img
-            className="infomration-image"
+            className="information-image"
             alt={this.props.image.alt}
             style={this.props.image.style}
             src={this.props.image.source}
@@ -25,7 +25,7 @@ class Information extends Component {
           this.props.image &&
           this.props.image.position === "right" &&
           <img
-            className="infomration-image"
+            className="information-image"
             alt={this.props.image.alt}
             style={this.props.image.style}
             src={this.props.image.source}

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow+Condensed:300,400,500,600,700,800,900|Barlow:300,400,500,600,700,800,900&display=swap");
 @import '../../shared/palette';
 
+$hideImageWidth: 75em;
+
 .infromation-wrapper {
   display: flex;
   width: 100%;
@@ -11,6 +13,7 @@
 
 .information {
   max-width: 30em;
+  min-width: 15em;
   margin: 2em;
   font-family: "Barlow";
   font-size: 1.25em;
@@ -22,5 +25,13 @@
   .description {
     margin-top: 0.5em;
     color: $color8;
+  }
+}
+
+.information-image {
+  transition: all 0.5s ease;
+
+  @media screen and (max-width: $hideImageWidth) {
+    display: none;
   }
 }

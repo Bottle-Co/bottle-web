@@ -1,3 +1,5 @@
+@import '../../shared/palette.scss';
+
 .btl-Footer-Container {
   display: flex;
   flex-direction: column;
@@ -6,6 +8,7 @@
   width: 100%;
   padding: 2em;
   color: #a2aed2;
+  background-color: $color9;
 
   .btl-Footer-Row1 {
     display: flex;
@@ -89,6 +92,7 @@
     justify-content: space-between;
     border-top: 1px solid #a2aed2;
     padding: 2em 0em 0em 2em;
+    margin-top: 2em;
 
     .btl-Footer-CopyRight {
 
