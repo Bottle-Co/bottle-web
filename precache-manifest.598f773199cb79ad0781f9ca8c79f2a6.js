@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0eb0e1c36af1f64437100a069219c9a4",
+    "revision": "481c342787ff6d9b33dc9e79680e1f5a",
     "url": "/bottle-web/index.html"
   },
   {
-    "revision": "3569877672ad3405ee9a",
-    "url": "/bottle-web/static/css/main.c06dc262.chunk.css"
+    "revision": "e0be898144e0cb7d3a84",
+    "url": "/bottle-web/static/css/main.ce1b25f3.chunk.css"
   },
   {
-    "revision": "05aaf86234a0cdea8145",
-    "url": "/bottle-web/static/js/2.4521a475.chunk.js"
+    "revision": "cc7fe6f4d38e68ef236c",
+    "url": "/bottle-web/static/js/2.6744a584.chunk.js"
   },
   {
     "revision": "890b83c3b503af9a5630afd9ff112890",
-    "url": "/bottle-web/static/js/2.4521a475.chunk.js.LICENSE.txt"
+    "url": "/bottle-web/static/js/2.6744a584.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "3569877672ad3405ee9a",
-    "url": "/bottle-web/static/js/main.e438bfdc.chunk.js"
+    "revision": "e0be898144e0cb7d3a84",
+    "url": "/bottle-web/static/js/main.34f68ade.chunk.js"
   },
   {
     "revision": "358775646a6f592d37f1",
