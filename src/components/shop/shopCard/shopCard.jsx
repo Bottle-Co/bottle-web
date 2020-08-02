@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "./shopCard.scss";
 import BuyButton from '../../buyButton/buyButton';
+import PreviewModal from '../../PreviewModal/previewModal';
 
 class ShopCard extends Component {
   render() {
@@ -13,7 +14,11 @@ class ShopCard extends Component {
           }}
           onClick={this.props.onClick}
         >
-          <img src={this.props.image} width={250} height={250} />
+          <PreviewModal
+            trigger={
+              <img src={this.props.image} width={250} height={250} />
+            }
+          />
         </div>
         <div className="btl-shopcard-body">
           <span className="btl-shopcard-title">{this.props.title}</span>

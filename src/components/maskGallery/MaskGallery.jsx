@@ -7,6 +7,7 @@ import Mask2 from '../../assets/Mask2.jpeg';
 import Mask3 from '../../assets/Mask3.jpeg';
 
 import './MaskGallery.scss';
+import Products, { MaskId } from '../../shared/products';
 
 class MaskGallery extends Component {
   constructor() {
@@ -41,6 +42,62 @@ class MaskGallery extends Component {
           bodyCaption="Ant-viral mask"
           isNew={true}
           onClick={() => this.setState({ selectedProduct: 1 })}
+          defaultColor="584b8fbb-66f2-4b6b-b438-699fdf47499a"
+          colorOptions={[
+            {
+              id: "584b8fbb-66f2-4b6b-b438-699fdf47499a",
+              color: "#EEE",
+              title: "White"
+            },
+            {
+              id: "a3a3d1f6-9f27-4537-ab77-25a7c5da7f43",
+              color: "#000",
+              title: "Black"
+            }
+          ]}
+          defaultQuantity="565dcd7a-00dc-4d9e-a2de-819ae44fc016"
+          quantityOptions={[
+            {
+              id: "565dcd7a-00dc-4d9e-a2de-819ae44fc016",
+              label: "Single mask"
+            },
+            {
+              id: "cebd3e1a-aaa3-40ac-880c-88a03959a7b2",
+              label: "Pack of 3"
+            }
+          ]}
+          colorToQuantityToImage={{
+            // Sustainability print
+            '584b8fbb-66f2-4b6b-b438-699fdf47499a': {
+              // Pack of 1
+              '565dcd7a-00dc-4d9e-a2de-819ae44fc016': Products[MaskId.Regular.SustainabilityPrint].image,
+              // Pack of 3
+              'cebd3e1a-aaa3-40ac-880c-88a03959a7b2': Products[MaskId.Regular.SustainabilityPrint].image
+            },
+            // 3 ply black
+            'a3a3d1f6-9f27-4537-ab77-25a7c5da7f43': {
+              // Pack of 1
+              '565dcd7a-00dc-4d9e-a2de-819ae44fc016': Products[MaskId.Regular.ThreePlyBlack].image,
+              // Pack of 3
+              'cebd3e1a-aaa3-40ac-880c-88a03959a7b2': Products[MaskId.Regular.ThreePlyBlack].image
+            }
+          }}
+          colorToQuantityToCost={{
+            // Sustainability print
+            '584b8fbb-66f2-4b6b-b438-699fdf47499a': {
+              // Pack of 1
+              '565dcd7a-00dc-4d9e-a2de-819ae44fc016': Products[MaskId.Regular.SustainabilityPrint].cost,
+              // Pack of 3
+              'cebd3e1a-aaa3-40ac-880c-88a03959a7b2': Products[MaskId.Regular.SustainabilityPrint].packCost
+            },
+            // 3 ply black
+            'a3a3d1f6-9f27-4537-ab77-25a7c5da7f43': {
+              // Pack of 1
+              '565dcd7a-00dc-4d9e-a2de-819ae44fc016': Products[MaskId.Regular.ThreePlyBlack].cost,
+              // Pack of 3
+              'cebd3e1a-aaa3-40ac-880c-88a03959a7b2': Products[MaskId.Regular.ThreePlyBlack].packCost
+            }
+          }}
         />
 
         <ProductCard
@@ -54,6 +111,30 @@ class MaskGallery extends Component {
           bodyCaption="Ant-viral mask"
           isNew={true}
           onClick={() => this.setState({ selectedProduct: 2 })}
+          defaultColor="584b8fbb-66f2-4b6b-b438-699fdf47499a"
+          colorOptions={[
+            {
+              id: "584b8fbb-66f2-4b6b-b438-699fdf47499a",
+              color: "#EEE",
+              title: "White"
+            },
+            {
+              id: "a3a3d1f6-9f27-4537-ab77-25a7c5da7f43",
+              color: "#000",
+              title: "Black"
+            }
+          ]}
+          defaultQuantity="565dcd7a-00dc-4d9e-a2de-819ae44fc016"
+          quantityOptions={[
+            {
+              id: "565dcd7a-00dc-4d9e-a2de-819ae44fc016",
+              label: "Single mask"
+            },
+            {
+              id: "cebd3e1a-aaa3-40ac-880c-88a03959a7b2",
+              label: "Pack of 3"
+            }
+          ]}
         />
 
         <ProductCard
@@ -67,6 +148,30 @@ class MaskGallery extends Component {
           bodyCaption="Ant-viral mask"
           isNew={true}
           onClick={() => this.setState({ selectedProduct: 3 })}
+          defaultColor="584b8fbb-66f2-4b6b-b438-699fdf47499a"
+          colorOptions={[
+            {
+              id: "584b8fbb-66f2-4b6b-b438-699fdf47499a",
+              color: "#EEE",
+              title: "White"
+            },
+            {
+              id: "a3a3d1f6-9f27-4537-ab77-25a7c5da7f43",
+              color: "#000",
+              title: "Black"
+            }
+          ]}
+          defaultQuantity="565dcd7a-00dc-4d9e-a2de-819ae44fc016"
+          quantityOptions={[
+            {
+              id: "565dcd7a-00dc-4d9e-a2de-819ae44fc016",
+              label: "Single mask"
+            },
+            {
+              id: "cebd3e1a-aaa3-40ac-880c-88a03959a7b2",
+              label: "Pack of 3"
+            }
+          ]}
         />
       </React.Fragment>
     )

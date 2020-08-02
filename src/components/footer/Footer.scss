@@ -7,7 +7,7 @@
   height: 100%;
   width: 100%;
   padding: 2em;
-  color: #a2aed2;
+  color: white;
   background-color: $color9;
   margin-top: 6em;
 
@@ -19,7 +19,7 @@
     span {
       padding: 0em;
       margin-left: 2em;
-      color: #a2aed2;
+      color: white;
     }
 
 
@@ -64,12 +64,12 @@
 
       a {
         width: fit-content;
-        color: #a2aed2;
+        color: white;
         cursor: pointer;
       }
 
       a:hover {
-        color: #a2aed2;
+        color: white;
       }
     }
 
@@ -91,7 +91,7 @@
   .btl-Footer-Tail {
     display: flex;
     justify-content: space-between;
-    border-top: 1px solid #a2aed2;
+    border-top: 1px solid white;
     padding: 2em 0em 0em 2em;
     margin-top: 2em;
 

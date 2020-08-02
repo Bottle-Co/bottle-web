@@ -9,11 +9,16 @@ export default class QuantityPicker extends Component {
     };
   }
 
+  async onLabelClick(newOptionId) {
+    await this.setState({ selected: newOptionId });
+    this.props.onChange(newOptionId);
+  }
+
   getLabel(option) {
     const select = this.state.selected === option.id;
 
     return (
-      <a class={`ui ${select ? "blue" : "" } image label`} onClick={() => this.setState({ selected: option.id }) }>
+      <a class={`ui ${select ? "blue" : "" } image label`} onClick={() => this.onLabelClick(option.id) }>
         {option.label}
       </a>
     );

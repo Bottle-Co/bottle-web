@@ -17,7 +17,6 @@ export const Shop = () => (
           description={product.description}
           image={product.image}
           cost={product.cost}
-          onClick={() => $('.ui.modal').modal('show')}
         />
       ))}
     </div>

@@ -1,15 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Rellax from 'rellax';
+import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import { HashRouter } from 'react-router-dom';
+import reducers from './shared/reducers';
 
 import App from './components/App';
 
-var rellax = new Rellax('.rellax');
-
 ReactDOM.render(
-  <HashRouter>
-    <App />
-  </HashRouter>,
+  <Provider store={createStore(reducers)}>
+    <HashRouter>
+      <App />
+    </HashRouter>
+  </Provider>,
   document.querySelector('#root')
 );

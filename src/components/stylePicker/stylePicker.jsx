@@ -10,9 +10,20 @@ export default class StylePicker extends Component {
     }
   }
 
+  async onStyleClick(newStyle) {
+    await this.setState({ selectedStyle: newStyle });
+    this.props.onChange(newStyle.id);
+  }
+
   getStyle(style) {
+    const isSelected = style.id === this.state.selectedStyle.id;
+
     return (
-      <li className="btl-stylepicker-color" style={{ backgroundColor: style.color }} onClick>
+      <li
+        key={style.id}
+        className={`btl-stylepicker-color ${isSelected ? 'btl-stylepicker-color-active' : ''}`}
+        style={{ backgroundColor: style.color }}
+        onClick={() => this.onStyleClick(style)}>
       </li>
     );
   }
