@@ -6,10 +6,23 @@ import PlainRickAndMorty from '../assets/masks/PlainRickAndMorty.png'
 import PlainShinyAndGlossy from '../assets/masks/PlainShinyAndGlossy.png';
 import PlainSustainability from '../assets/masks/PlainSustainability.png';
 
+export const MaskCategory = {
+  Regular: 0,
+  Enviro: 1
+}
+
+export const MaskId = {
+  Regular: {
+    SustainabilityPrint: 0,
+    ThreePlyBlack: 1
+  }
+}
+
 const Products = [
   {
-    name: 'Plain Black',
-    image: PlainBlack,
+    name: 'Plain White',
+    image: PlainWhite,
+    type: MaskCategory.Regular,
     description: `Lorem ipsum dolor sit amet,
                   consectetur adipiscing elit.
                   Pellentesque sodales turpis eget
@@ -17,6 +30,21 @@ const Products = [
                   Vestibulum vitae metus eget lacus
                   suscipit gravida id sit amet leo.`,
     cost: 99,
+    packCost: 299,
+    stripeId: ''
+  },
+  {
+    name: 'Plain Black',
+    image: PlainBlack,
+    type: MaskCategory.Regular,
+    description: `Lorem ipsum dolor sit amet,
+                  consectetur adipiscing elit.
+                  Pellentesque sodales turpis eget
+                  lectus gravida consectetur.
+                  Vestibulum vitae metus eget lacus
+                  suscipit gravida id sit amet leo.`,
+    cost: 99,
+    packCost: 299,
     stripeId: ''
   },
   {
@@ -28,30 +56,6 @@ const Products = [
                   Vestibulum vitae metus eget lacus
                   suscipit gravida id sit amet leo.`,
     image: PlainBlackN95,
-    cost: 199,
-    stripeId: ''
-  },
-  {
-    name: 'Plain White',
-    description: `Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                  Pellentesque sodales turpis eget
-                  lectus gravida consectetur.
-                  Vestibulum vitae metus eget lacus
-                  suscipit gravida id sit amet leo.`,
-    image: PlainWhite,
-    cost: 99,
-    stripeId: ''
-  },
-  {
-    name: 'Plain White N95',
-    description: `Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit.
-                  Pellentesque sodales turpis eget
-                  lectus gravida consectetur.
-                  Vestibulum vitae metus eget lacus
-                  suscipit gravida id sit amet leo.`,
-    image: PlainWhiteN95,
     cost: 199,
     stripeId: ''
   },

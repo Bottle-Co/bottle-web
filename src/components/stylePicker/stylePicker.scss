@@ -1,3 +1,5 @@
+@import '../../shared/palette.scss';
+
 .btl-stylepicker {
   .btl-stylepicker-list {
     list-style: none;
@@ -16,6 +18,10 @@
       &:hover {
         transform: scale(1.2);
       }
+    }
+
+    .btl-stylepicker-color-active {
+      border: 2px solid $selected;
     }
   }
 }
