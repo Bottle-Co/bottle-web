@@ -147,7 +147,10 @@ class ProductCard extends Component {
               onChange={(newQuantityId) => this.setState({ quantityId: newQuantityId })}
             />
           </div>
-          <BuyButton cost={this.props.colorToQuantityToCost[this.state.colorId][this.state.quantityId]}/>
+          <BuyButton
+            priceId={this.props.colorToQuantityToPriceId[this.state.colorId][this.state.quantityId]}
+            cost={this.props.colorToQuantityToCost[this.state.colorId][this.state.quantityId]}
+          />
         </div>
       </div>
     );
