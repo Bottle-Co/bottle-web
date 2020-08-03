@@ -1,0 +1,35 @@
+@import '../../../shared/palette.scss';
+
+.modal {
+  height: auto;
+  top: auto;
+  left: auto;
+  bottom: auto;
+  right: auto;
+}
+
+.btl-image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.btl-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .shopping-cart-modal-item:not(:first-child) {
+    margin-top: 0.5em;
+  }
+}
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+
+  .modal-total-price {
+    font-size: 1.5em;
+    align-self: center;
+    color: $blue;
+  }
+}
