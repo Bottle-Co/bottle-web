@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import Section from '../section/Section';
 import Logo from '../logo/Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faInstagram, faTwitter, faKickstarterK, faFacebookMessenger } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookF, faInstagram, faTwitter, faKickstarterK } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons'
 
 import './Footer.scss';
+import ConfettiButton from '../confettiButton/confettiButton';
 
 class Footer extends Component {
   /**
@@ -28,33 +28,48 @@ class Footer extends Component {
     );
   }
 
-  getContactSummary() {
+  /**
+   * Using this as a temprary footer section until contact section
+   * can be improved or multiple links under contact could be built.
+   */
+  getContactSummaryTemp() {
     return (
       <div className="btl-Footer-Summary">
         <span className="btl-Footer-Summary-Title">Contact</span>
         <div className="btl-Footer-Summary-Items">
-          <a href="#team">Team</a>
-          <a className="btl-Footer-Summary-Item">Marketing</a>
-          <a className="btl-Footer-Summary-Item">Partnership</a>
-          <a className="btl-Footer-Summary-Item">Get involved</a>
+          <ConfettiButton title="Get in touch" href="mailto:bottleandco@gmail.com" />
         </div>
       </div>
     );
   }
 
-  getResourceSummary() {
-    return (
-      <div className="btl-Footer-Summary">
-        <span className="btl-Footer-Summary-Title">Resources</span>
-        <div className="btl-Footer-Summary-Items">
-          <a>Process of making</a>
-          <a className="btl-Footer-Summary-Item">Impact</a>
-          <a className="btl-Footer-Summary-Item">Insipration</a>
-          <a className="btl-Footer-Summary-Item">Designs</a>
-        </div>
-      </div>
-    );
-  }
+  // getContactSummary() {
+  //   return (
+  //     <div className="btl-Footer-Summary">
+  //       <span className="btl-Footer-Summary-Title">Contact</span>
+  //       <div className="btl-Footer-Summary-Items">
+  //         <a href="#team">Team</a>
+  //         <a className="btl-Footer-Summary-Item">Marketing</a>
+  //         <a className="btl-Footer-Summary-Item">Partnership</a>
+  //         <a className="btl-Footer-Summary-Item">Get involved</a>
+  //       </div>
+  //     </div>
+  //   );
+  // }
+
+  // getResourceSummary() {
+  //   return (
+  //     <div className="btl-Footer-Summary">
+  //       <span className="btl-Footer-Summary-Title">Resources</span>
+  //       <div className="btl-Footer-Summary-Items">
+  //         <a>Process of making</a>
+  //         <a className="btl-Footer-Summary-Item">Impact</a>
+  //         <a className="btl-Footer-Summary-Item">Insipration</a>
+  //         <a className="btl-Footer-Summary-Item">Designs</a>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   getTail() {
     return (
@@ -78,8 +93,8 @@ class Footer extends Component {
           </div>
           <div className="btl-Footer-Row2">
             <div className="btl-Footer-Row2-Left">
-              {this.getContactSummary()}
-              {this.getResourceSummary()}
+              {this.getContactSummaryTemp()}
+              {/* {this.getResourceSummary()} */}
             </div>
             <div className="btl-Footer-Row2-Right">
               {this.getSocialSummary()}
