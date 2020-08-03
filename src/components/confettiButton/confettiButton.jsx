@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import gsap from 'gsap';
-import Physics2DPlugin from 'gsap/all';
 import './confettiButton.scss';
 
 function particles(parent, quantity, x, y, minAngle, maxAngle) {
@@ -48,7 +47,6 @@ function particles(parent, quantity, x, y, minAngle, maxAngle) {
 
 class ConfettiButton extends Component {
   componentDidMount() {
-    gsap.registerPlugin(Physics2DPlugin);
     this.initializeConfetti();
   }
 
