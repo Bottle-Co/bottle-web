@@ -20,7 +20,7 @@ export const MaskId = {
 
 const Products = [
   {
-    name: 'Plain White',
+    name: 'Anti-Viral Mask',
     image: PlainWhite,
     type: MaskCategory.Regular,
     description: `Lorem ipsum dolor sit amet,
@@ -31,10 +31,11 @@ const Products = [
                   suscipit gravida id sit amet leo.`,
     cost: 99,
     packCost: 299,
-    stripeId: ''
+    stripeId: 'price_1H6PaAD8YQ9Kv8aMSflg1QV8',
+    packStripeId: 'price_1H6PaAD8YQ9Kv8aMSflg1QV8'
   },
   {
-    name: 'Plain Black',
+    name: 'Anti-Viral Mask',
     image: PlainBlack,
     type: MaskCategory.Regular,
     description: `Lorem ipsum dolor sit amet,
@@ -45,7 +46,8 @@ const Products = [
                   suscipit gravida id sit amet leo.`,
     cost: 99,
     packCost: 299,
-    stripeId: ''
+    stripeId: 'price_1H6PaAD8YQ9Kv8aMSflg1QV8',
+    packStripeId: 'price_1H6PaAD8YQ9Kv8aMSflg1QV8'
   },
   {
     name: 'Plain Black N95',

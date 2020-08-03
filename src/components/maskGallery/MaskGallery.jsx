@@ -98,6 +98,22 @@ class MaskGallery extends Component {
               'cebd3e1a-aaa3-40ac-880c-88a03959a7b2': Products[MaskId.Regular.ThreePlyBlack].packCost
             }
           }}
+          colorToQuantityToPriceId={{
+            // Sustainability print
+            '584b8fbb-66f2-4b6b-b438-699fdf47499a': {
+              // Pack of 1
+              '565dcd7a-00dc-4d9e-a2de-819ae44fc016': Products[MaskId.Regular.SustainabilityPrint].stripeId,
+              // Pack of 3
+              'cebd3e1a-aaa3-40ac-880c-88a03959a7b2': Products[MaskId.Regular.SustainabilityPrint].packStripeId
+            },
+            // 3 ply black
+            'a3a3d1f6-9f27-4537-ab77-25a7c5da7f43': {
+              // Pack of 1
+              '565dcd7a-00dc-4d9e-a2de-819ae44fc016': Products[MaskId.Regular.ThreePlyBlack].stripeId,
+              // Pack of 3
+              'cebd3e1a-aaa3-40ac-880c-88a03959a7b2': Products[MaskId.Regular.ThreePlyBlack].packStripeId
+            }
+          }}
         />
 
         <ProductCard
