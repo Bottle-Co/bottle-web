@@ -6,6 +6,7 @@
   justify-content: space-between;
   height: 100%;
   width: 100%;
+  min-width: 40em;
   padding: 2em;
   color: white;
   background-color: $color9;
@@ -21,8 +22,6 @@
       margin-left: 2em;
       color: white;
     }
-
-
   }
 
   .btl-Footer-Row2 {
@@ -31,6 +30,13 @@
     flex-wrap: wrap;
     margin-top: 3em;
     padding: 0em 15em;
+
+    .btl-Footer-Summary { margin-top: 2em; }
+
+    @media screen and (max-width: 55em) {
+      padding: 0em;
+      justify-content: center;
+    }
   }
 
   .btl-Footer-Row2-Left {
@@ -93,7 +99,7 @@
     justify-content: space-between;
     border-top: 1px solid white;
     padding: 2em 0em 0em 2em;
-    margin-top: 2em;
+    margin-top: 3em;
 
     .btl-Footer-CopyRight {
 
