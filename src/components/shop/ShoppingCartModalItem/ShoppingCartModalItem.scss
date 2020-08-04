@@ -1,0 +1,69 @@
+@import '../../../shared/palette.scss';
+
+.item-count {
+  width: 22px;
+  height: 22px;
+  line-height: 22px;
+  font-size: .7em;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 50%;
+  background: $blue;
+  color: #fff;
+  margin-left: -0.5em;
+  margin-top: -0.2em;
+  position: relative;
+  transition: opacity .3s ease;
+}
+
+.shopping-cart-modal-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 10em;
+  border-radius: 1em;
+  box-shadow: 0 -1px 1px rgba(0,0,0,0.12), 
+    0 2px 2px rgba(0,0,0,0.12), 
+    0 4px 4px rgba(0,0,0,0.12), 
+    0 8px 8px rgba(0,0,0,0.12),
+    0 16px 16px rgba(0,0,0,0.12);
+
+    .shopping-cart-modal-item-head {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.5em 1em;
+      width: 100%;
+      border-bottom: 1px solid #dededf;
+
+      .shopping-cart-modal-item-title {
+        font-size: 1.1em;
+        font-weight: 500;
+      }
+
+      .shopping-cart-modal-item-delete {
+        color: red;
+        cursor: pointer;
+      }
+    }
+
+    .shopping-cart-modal-item-body {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      height: 100%;
+      padding: 0em 0.5em;
+
+      .shopping-cart-modal-item-image {
+        height: 6em;
+      }
+
+      .shopping-cart-modal-item-price {
+        color: $blue;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.3em;
+      }
+    }
+}
