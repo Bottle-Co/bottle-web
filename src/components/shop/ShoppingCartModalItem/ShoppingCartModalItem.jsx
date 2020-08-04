@@ -7,10 +7,19 @@ import './ShoppingCartModalItem.scss';
 
 const mapStateToProps = () => ({});
 class ShoppingCartModalItem extends Component {
+  getCount() {
+    return (
+      <div className="item-count">
+        <span>{this.props.count}</span>
+      </div>
+    );
+  }
+
   render() {
     console.log(this.props.item)
     return (
       <div className="shopping-cart-modal-item">
+        {this.props.count > 1 && this.getCount()}
         <div className="shopping-cart-modal-item-head">
           <div className="shopping-cart-modal-item-title">
             {this.props.item.name}

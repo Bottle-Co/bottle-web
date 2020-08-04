@@ -4,7 +4,12 @@ export const shoppingCartItems = (items = [], action) => {
       return [...items, action.payload];
 
     case 'REMOVE_ITEM':
-      return items.filter(item => item.id !== action.payload.id);
+      const indexToRemove = items.findIndex(item => item.id === action.payload.id);
+      const copy = [...items];
+
+      copy.splice(indexToRemove, 1);
+
+      return copy;
 
     default:
       return items;
